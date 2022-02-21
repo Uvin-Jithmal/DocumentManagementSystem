@@ -1,0 +1,11 @@
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\TravelerClasses.dll
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\bin\Debug\TravelerClasses.pdb
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\ASUS\source\repos\TravelerDetailsManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
