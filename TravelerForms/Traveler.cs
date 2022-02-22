@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TravelerDetailsManagementSystem.MealMasterfile
+namespace TravelerDetailsManagementSystem.TravelerForms
 {
-    public partial class Meal : Form
+    public partial class Traveler : Form
     {
-        public Meal()
+        public Traveler()
         {
             InitializeComponent();
-        }
-
-        private void Meal_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

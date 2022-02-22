@@ -101,6 +101,12 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="TravelerForms\Traveler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelerForms\Traveler.Designer.cs">
+      <DependentUpon>Traveler.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Common\frmCommonSearch.resx">
       <DependentUpon>frmCommonSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealMasterfile\Meal.resx">
+      <DependentUpon>Meal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelerForms\Traveler.resx">
+      <DependentUpon>Traveler.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -138,13 +150,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TravelerMasterFile\" />
+    <Content Include="Resources\2650401.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Objective.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2650401.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="BusinessLogicLayer\BusinessLogicLayer.csproj">
