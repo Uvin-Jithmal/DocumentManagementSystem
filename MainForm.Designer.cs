@@ -83,6 +83,7 @@ namespace TravelerDetailsManagementSystem
             this.Name = "MainForm";
             this.Text = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

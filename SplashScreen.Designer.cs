@@ -36,7 +36,6 @@ namespace TravelerDetailsManagementSystem
             this.panelSlide = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +44,7 @@ namespace TravelerDetailsManagementSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(681, 694);
+            this.label1.Location = new System.Drawing.Point(596, 685);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(302, 20);
             this.label1.TabIndex = 1;
@@ -57,7 +56,7 @@ namespace TravelerDetailsManagementSystem
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(635, 594);
+            this.label2.Location = new System.Drawing.Point(551, 585);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(376, 100);
             this.label2.TabIndex = 2;
@@ -66,8 +65,7 @@ namespace TravelerDetailsManagementSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumPurple;
-            this.panel1.Controls.Add(this.panelSlide);
-            this.panel1.Location = new System.Drawing.Point(603, 738);
+            this.panel1.Location = new System.Drawing.Point(521, 721);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 17);
             this.panel1.TabIndex = 3;
@@ -75,7 +73,7 @@ namespace TravelerDetailsManagementSystem
             // panelSlide
             // 
             this.panelSlide.BackColor = System.Drawing.Color.Goldenrod;
-            this.panelSlide.Location = new System.Drawing.Point(343, 0);
+            this.panelSlide.Location = new System.Drawing.Point(521, 722);
             this.panelSlide.Name = "panelSlide";
             this.panelSlide.Size = new System.Drawing.Size(91, 16);
             this.panelSlide.TabIndex = 4;
@@ -89,7 +87,7 @@ namespace TravelerDetailsManagementSystem
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Indigo;
             this.pictureBox1.Image = global::TravelerDetailsManagementSystem.Properties.Resources.Objective;
-            this.pictureBox1.Location = new System.Drawing.Point(122, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1250, 601);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +99,8 @@ namespace TravelerDetailsManagementSystem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1688, 886);
+            this.ClientSize = new System.Drawing.Size(1290, 794);
+            this.Controls.Add(this.panelSlide);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -109,9 +108,9 @@ namespace TravelerDetailsManagementSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreen";
             this.Text = "SplashScreen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.Shown += new System.EventHandler(this.SplashScreen_Shown);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

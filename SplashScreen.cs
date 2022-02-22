@@ -35,13 +35,13 @@ namespace TravelerDetailsManagementSystem
 
         {
 
-            //after 3 sec stop the timer
-            tmr.Stop();
-            //display mainform
-            MainForm mf = new MainForm();
-            mf.Show();
-            //hide this form
-            this.Hide();
+            ////after 3 sec stop the timer
+            //tmr.Stop();
+            ////display mainform
+            //MainForm mf = new MainForm();
+            //mf.Show();
+            ////hide this form
+            //this.Hide();
 
         }
 
@@ -57,13 +57,13 @@ namespace TravelerDetailsManagementSystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            panelSlide.Left += 2;
-            if (panelSlide.Left > 450)
+            panelSlide.Width += 2;
+            if (panelSlide.Width > 435)
             {
-                panelSlide.Left = 0;
+                panelSlide.Width = 435;
                
             }
-            if (panelSlide.Left < 0)
+            if (panelSlide.Width < 0)
             {
 
                 move = 2;
