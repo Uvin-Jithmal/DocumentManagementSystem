@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Common\Execute.cs" />
     <Compile Include="Connection\SqlConn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
