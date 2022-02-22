@@ -9,3 +9,9 @@ C:\Users\uvin\Source\Repos\TravelerManagementSystem\TravelerClasses\obj\Debug\Tr
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csproj.CoreCompileInputs.cache
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.dll
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.pdb
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\bin\Debug\TravelerClasses.dll
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\bin\Debug\TravelerClasses.pdb
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.dll
+C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.pdb
