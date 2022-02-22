@@ -1,7 +1,7 @@
 ﻿
-namespace TravelerDetailsManagementSystem.MealMasterfile
+namespace TravelerDetailsManagementSystem.TravelerForms
 {
-    partial class Meal
+    partial class Traveler
     {
         /// <summary>
         /// Required designer variable.
@@ -31,17 +31,16 @@ namespace TravelerDetailsManagementSystem.MealMasterfile
         {
             this.SuspendLayout();
             // 
-            // Meal
+            // Traveler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Meal";
+            this.Name = "Traveler";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Meal";
+            this.Text = "Traveler";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Meal_Load);
             this.ResumeLayout(false);
 
         }

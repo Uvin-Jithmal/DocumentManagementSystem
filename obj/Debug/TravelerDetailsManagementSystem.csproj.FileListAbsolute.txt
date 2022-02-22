@@ -68,3 +68,5 @@ C:\Users\uvin\Source\Repos\TravelerManagementSystem\bin\Debug\CrystalDecisions.R
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\bin\Debug\stdole.dll
 C:\Users\uvin\Source\Repos\TravelerManagementSystem\obj\Debug\TravelerDetailsManagementSystem.Common.frmCommonSearch.resources
+C:\Users\uvin\Source\Repos\TravelerManagementSystem\obj\Debug\TravelerDetailsManagementSystem.MealMasterfile.Meal.resources
+C:\Users\uvin\Source\Repos\TravelerManagementSystem\obj\Debug\TravelerDetailsManagementSystem.TravelerForms.Traveler.resources
