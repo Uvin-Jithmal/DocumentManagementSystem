@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Common\Execute.cs" />
     <Compile Include="Connection\SqlConn.cs" />
+    <Compile Include="MealDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TravelerDA.cs" />
   </ItemGroup>

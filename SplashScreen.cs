@@ -60,7 +60,7 @@ namespace TravelerDetailsManagementSystem
             panelSlide.Width += 2;
             if (panelSlide.Width > 435)
             {
-                panelSlide.Width = 435;
+                panelSlide.Width = 434;
                
             }
             if (panelSlide.Width < 0)
