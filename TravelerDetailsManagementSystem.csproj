@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\2650401.jpg" />
+    <None Include="Resources\joyent_90px.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Objective.png" />
