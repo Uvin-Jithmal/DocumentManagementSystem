@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer\Traveler.cs" />
+    <Compile Include="Customer\TravelerClass.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="MealClasses\Meals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

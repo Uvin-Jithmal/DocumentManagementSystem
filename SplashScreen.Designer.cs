@@ -42,11 +42,11 @@ namespace TravelerDetailsManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(596, 685);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 17);
+            this.label1.Size = new System.Drawing.Size(249, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customer Details Management System";
             // 
@@ -64,7 +64,7 @@ namespace TravelerDetailsManagementSystem
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Location = new System.Drawing.Point(521, 721);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 17);
@@ -85,7 +85,7 @@ namespace TravelerDetailsManagementSystem
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Indigo;
+            this.pictureBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.pictureBox1.Image = global::TravelerDetailsManagementSystem.Properties.Resources.Objective;
             this.pictureBox1.Location = new System.Drawing.Point(50, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -98,8 +98,8 @@ namespace TravelerDetailsManagementSystem
             // SplashScreen
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1290, 780);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(1290, 772);
             this.Controls.Add(this.panelSlide);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TravelerClasses.Customer
 {
-    public class Traveler
+    public class TravelerClass
     {
         public int TravelerID { get; set; }
         public String TravelerName { get; set; }
@@ -25,6 +25,8 @@ namespace TravelerClasses.Customer
         public String VehicleType { get; set; }
         public decimal Amount { get; set; }
         public String SpecialNotes { get; set; }
+        public DateTime EnteredOn { get; set; }
+        public DateTime LastUpdatedOn { get; set; }
 
     }
 }

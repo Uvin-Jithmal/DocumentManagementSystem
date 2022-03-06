@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\2650401.jpg" />
+    <Content Include="Resources\icons8_Close_Window_15px.png" />
     <None Include="Resources\joyent_90px.png" />
   </ItemGroup>
   <ItemGroup>
