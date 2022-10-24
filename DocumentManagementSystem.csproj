@@ -93,6 +93,12 @@
     <Compile Include="MealMasterfile\Meal.Designer.cs">
       <DependentUpon>Meal.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutgoingDocuments\AddDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutgoingDocuments\AddDocuments.Designer.cs">
+      <DependentUpon>AddDocuments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs">
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MealMasterfile\Meal.resx">
       <DependentUpon>Meal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutgoingDocuments\AddDocuments.resx">
+      <DependentUpon>AddDocuments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,5 +176,6 @@
       <Name>TravelerClasses</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

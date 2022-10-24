@@ -26,7 +26,6 @@ namespace TravelerDetailsManagementSystem
 
         #endregion
 
-
         #region Private Methods
 
         #region Method for tabpage creation and form load From Buttons
@@ -196,16 +195,6 @@ namespace TravelerDetailsManagementSystem
 
         }
 
-        //Hot Key For Close TabPage
-        //private void MaintabControl_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (e.KeyCode == Keys.Escape)
-        //    {
-        //        MaintabControl_DrawItem(null, null);
-        //        MaintabControl_MouseClick(null, null);
-        //    }
-        //}
-
         #endregion
 
         #region Module Button Expand Method
@@ -234,17 +223,17 @@ namespace TravelerDetailsManagementSystem
 
         public MainForm()
         {
-            Thread trd = new Thread(new ThreadStart(formRun));
-            trd.Start();
-            Thread.Sleep(3000);
+            //Thread trd = new Thread(new ThreadStart(formRun));
+            //trd.Start();
+            //Thread.Sleep(3000);
             InitializeComponent();
-            trd.Abort();
+            //trd.Abort();
         }
 
-        private void formRun()
-        {
-            Application.Run(new SplashScreen());
-        }
+        //private void formRun()
+        //{
+        //    Application.Run(new SplashScreen());
+        //}
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -255,6 +244,7 @@ namespace TravelerDetailsManagementSystem
 
         #region Button Click Events
 
+        //Traveller Button
         private void btnTraveler_Click(object sender, EventArgs e)
         {
             //Traveler frmTravel = new Traveler();
@@ -263,6 +253,7 @@ namespace TravelerDetailsManagementSystem
             OpenForm((Button) sender);
         }
 
+        //Meals Button
         private void btnMeals_Click(object sender, EventArgs e)
         {
             //Meal frmMeal = new Meal();
@@ -271,22 +262,31 @@ namespace TravelerDetailsManagementSystem
             OpenForm((Button)sender);
         }
 
+        //Reports Button
         private void btnReport_Click(object sender, EventArgs e)
         {
             ExpandModules((Button)sender);
         }
 
+        //Home Button
         private void button1_Click(object sender, EventArgs e)
         {
             MaintabControl.TabPages.Add(tabFrontScreen);
         }
 
+        //Close All Button
         private void button2_Click(object sender, EventArgs e)
         {
             MaintabControl.TabPages.Clear();
         }
-        #endregion
 
+        //Outgoing Button
+        private void btnOutgoingDoc_Click(object sender, EventArgs e)
+        {
+            OpenForm((Button)sender);
+        }
+
+        #endregion
 
     }
 }
