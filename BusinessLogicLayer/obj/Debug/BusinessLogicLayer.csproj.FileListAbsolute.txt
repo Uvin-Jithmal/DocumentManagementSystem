@@ -103,3 +103,25 @@ C:\Users\ASUS\Source\Repos\DocumentManagementSystem\BusinessLogicLayer\obj\Debug
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\TravelerClasses.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\MySql.Data.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\Google.Protobuf.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\Zstandard.Net.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\Ubiety.Dns.Core.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\System.Buffers.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\K4os.Compression.LZ4.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\K4os.Hash.xxHash.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\TravelerClasses.pdb
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\bin\Debug\MySql.Data.xml
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\Projects\Visual Studio Projects\Document Management System\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
