@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDocument));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnHrDocSave = new System.Windows.Forms.Button();
@@ -42,23 +43,42 @@
             this.btnAddHrDoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnITDocSave = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtITDocName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtITDocAbout = new System.Windows.Forms.TextBox();
+            this.checkFinanceit = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkITit = new System.Windows.Forms.CheckBox();
+            this.checkHRit = new System.Windows.Forms.CheckBox();
+            this.btnAddITDoc = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnFinanceDocSave = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtFinanceDocName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtFinanceDocAbout = new System.Windows.Forms.TextBox();
+            this.checkFinancefi = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.checkITfi = new System.Windows.Forms.CheckBox();
+            this.checkHRfi = new System.Windows.Forms.CheckBox();
+            this.btnAddFinanceDoc = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnPersonalDocSave = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtITPersonalName = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtPersonalDocAbout = new System.Windows.Forms.TextBox();
+            this.checkFIpersonal = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkITpersonal = new System.Windows.Forms.CheckBox();
+            this.checkHRpersonal = new System.Windows.Forms.CheckBox();
+            this.btnAddPersonalDoc = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,14 +122,17 @@
             // 
             // btnHrDocSave
             // 
-            this.btnHrDocSave.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnHrDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnHrDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHrDocSave.ForeColor = System.Drawing.Color.White;
+            this.btnHrDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnHrDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnHrDocSave.Image")));
+            this.btnHrDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHrDocSave.Location = new System.Drawing.Point(822, 96);
             this.btnHrDocSave.Name = "btnHrDocSave";
-            this.btnHrDocSave.Size = new System.Drawing.Size(280, 58);
+            this.btnHrDocSave.Size = new System.Drawing.Size(229, 58);
             this.btnHrDocSave.TabIndex = 11;
             this.btnHrDocSave.Text = "Save HR Document";
+            this.btnHrDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHrDocSave.UseVisualStyleBackColor = false;
             this.btnHrDocSave.Click += new System.EventHandler(this.btnHrDocSave_Click);
             // 
@@ -203,7 +226,7 @@
             this.btnAddHrDoc.Name = "btnAddHrDoc";
             this.btnAddHrDoc.Size = new System.Drawing.Size(195, 38);
             this.btnAddHrDoc.TabIndex = 2;
-            this.btnAddHrDoc.Text = "Add Document";
+            this.btnAddHrDoc.Text = "Choose Document";
             this.btnAddHrDoc.UseVisualStyleBackColor = false;
             this.btnAddHrDoc.Click += new System.EventHandler(this.btnAddHrDoc_Click);
             // 
@@ -219,12 +242,17 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.checkBox4);
+            this.tabPage2.Controls.Add(this.btnITDocSave);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.checkBox5);
-            this.tabPage2.Controls.Add(this.checkBox6);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.txtITDocName);
             this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.txtITDocAbout);
+            this.tabPage2.Controls.Add(this.checkFinanceit);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.checkITit);
+            this.tabPage2.Controls.Add(this.checkHRit);
+            this.tabPage2.Controls.Add(this.btnAddITDoc);
+            this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -233,71 +261,19 @@
             this.tabPage2.Text = "IT Documents";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(401, 218);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(177, 23);
-            this.checkBox4.TabIndex = 12;
-            this.checkBox4.Text = "Financial Department";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 178);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 19);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Who Can View";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(236, 218);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(129, 23);
-            this.checkBox5.TabIndex = 10;
-            this.checkBox5.Text = "IT Department";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(63, 218);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(138, 23);
-            this.checkBox6.TabIndex = 9;
-            this.checkBox6.Text = "HR Department";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(207, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 38);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add Document";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 19);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Add File";
-            // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.checkBox7);
+            this.tabPage3.Controls.Add(this.btnFinanceDocSave);
             this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Controls.Add(this.checkBox8);
-            this.tabPage3.Controls.Add(this.checkBox9);
-            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.txtFinanceDocName);
             this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.txtFinanceDocAbout);
+            this.tabPage3.Controls.Add(this.checkFinancefi);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.checkITfi);
+            this.tabPage3.Controls.Add(this.checkHRfi);
+            this.tabPage3.Controls.Add(this.btnAddFinanceDoc);
+            this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -306,67 +282,19 @@
             this.tabPage3.Text = "Finance Documents";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(433, 208);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(177, 23);
-            this.checkBox7.TabIndex = 12;
-            this.checkBox7.Text = "Financial Department";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 168);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 19);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Who Can View";
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(268, 208);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(129, 23);
-            this.checkBox8.TabIndex = 10;
-            this.checkBox8.Text = "IT Department";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(95, 208);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(138, 23);
-            this.checkBox9.TabIndex = 9;
-            this.checkBox9.Text = "HR Department";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(239, 65);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 38);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Add Document";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(95, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 19);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Add File";
-            // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.btnPersonalDocSave);
             this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.txtITPersonalName);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.txtPersonalDocAbout);
+            this.tabPage4.Controls.Add(this.checkFIpersonal);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.checkITpersonal);
+            this.tabPage4.Controls.Add(this.checkHRpersonal);
+            this.tabPage4.Controls.Add(this.btnAddPersonalDoc);
+            this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Location = new System.Drawing.Point(4, 28);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -375,27 +303,363 @@
             this.tabPage4.Text = "Personal Documents";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // openFileDialog1
             // 
-            this.button3.Location = new System.Drawing.Point(233, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(195, 38);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Add Document";
-            this.button3.UseVisualStyleBackColor = true;
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnITDocSave
+            // 
+            this.btnITDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnITDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnITDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnITDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnITDocSave.Image")));
+            this.btnITDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnITDocSave.Location = new System.Drawing.Point(817, 98);
+            this.btnITDocSave.Name = "btnITDocSave";
+            this.btnITDocSave.Size = new System.Drawing.Size(229, 58);
+            this.btnITDocSave.TabIndex = 22;
+            this.btnITDocSave.Text = "Save IT Document";
+            this.btnITDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnITDocSave.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(111, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Document Name";
+            // 
+            // txtITDocName
+            // 
+            this.txtITDocName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITDocName.Location = new System.Drawing.Point(284, 89);
+            this.txtITDocName.Name = "txtITDocName";
+            this.txtITDocName.Size = new System.Drawing.Size(336, 24);
+            this.txtITDocName.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(111, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "About Document";
+            // 
+            // txtITDocAbout
+            // 
+            this.txtITDocAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITDocAbout.Location = new System.Drawing.Point(284, 133);
+            this.txtITDocAbout.Name = "txtITDocAbout";
+            this.txtITDocAbout.Size = new System.Drawing.Size(336, 24);
+            this.txtITDocAbout.TabIndex = 18;
+            // 
+            // checkFinanceit
+            // 
+            this.checkFinanceit.AutoSize = true;
+            this.checkFinanceit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFinanceit.Location = new System.Drawing.Point(438, 243);
+            this.checkFinanceit.Name = "checkFinanceit";
+            this.checkFinanceit.Size = new System.Drawing.Size(177, 23);
+            this.checkFinanceit.TabIndex = 17;
+            this.checkFinanceit.Text = "Financial Department";
+            this.checkFinanceit.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(111, 203);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 17);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Who Can View";
+            // 
+            // checkITit
+            // 
+            this.checkITit.AutoSize = true;
+            this.checkITit.Checked = true;
+            this.checkITit.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkITit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkITit.Location = new System.Drawing.Point(279, 243);
+            this.checkITit.Name = "checkITit";
+            this.checkITit.Size = new System.Drawing.Size(129, 23);
+            this.checkITit.TabIndex = 15;
+            this.checkITit.Text = "IT Department";
+            this.checkITit.UseVisualStyleBackColor = true;
+            // 
+            // checkHRit
+            // 
+            this.checkHRit.AutoSize = true;
+            this.checkHRit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkHRit.Location = new System.Drawing.Point(111, 243);
+            this.checkHRit.Name = "checkHRit";
+            this.checkHRit.Size = new System.Drawing.Size(138, 23);
+            this.checkHRit.TabIndex = 14;
+            this.checkHRit.Text = "HR Department";
+            this.checkHRit.UseVisualStyleBackColor = true;
+            // 
+            // btnAddITDoc
+            // 
+            this.btnAddITDoc.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddITDoc.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddITDoc.ForeColor = System.Drawing.Color.White;
+            this.btnAddITDoc.Location = new System.Drawing.Point(284, 29);
+            this.btnAddITDoc.Name = "btnAddITDoc";
+            this.btnAddITDoc.Size = new System.Drawing.Size(195, 38);
+            this.btnAddITDoc.TabIndex = 13;
+            this.btnAddITDoc.Text = "Choose Document";
+            this.btnAddITDoc.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(111, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Add File";
+            // 
+            // btnFinanceDocSave
+            // 
+            this.btnFinanceDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnFinanceDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinanceDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnFinanceDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnFinanceDocSave.Image")));
+            this.btnFinanceDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFinanceDocSave.Location = new System.Drawing.Point(771, 98);
+            this.btnFinanceDocSave.Name = "btnFinanceDocSave";
+            this.btnFinanceDocSave.Size = new System.Drawing.Size(258, 58);
+            this.btnFinanceDocSave.TabIndex = 22;
+            this.btnFinanceDocSave.Text = "Save Financial Document";
+            this.btnFinanceDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanceDocSave.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(106, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 17);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Document Name";
+            // 
+            // txtFinanceDocName
+            // 
+            this.txtFinanceDocName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinanceDocName.Location = new System.Drawing.Point(279, 90);
+            this.txtFinanceDocName.Name = "txtFinanceDocName";
+            this.txtFinanceDocName.Size = new System.Drawing.Size(336, 24);
+            this.txtFinanceDocName.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(106, 137);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 17);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "About Document";
+            // 
+            // txtFinanceDocAbout
+            // 
+            this.txtFinanceDocAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinanceDocAbout.Location = new System.Drawing.Point(279, 134);
+            this.txtFinanceDocAbout.Name = "txtFinanceDocAbout";
+            this.txtFinanceDocAbout.Size = new System.Drawing.Size(336, 24);
+            this.txtFinanceDocAbout.TabIndex = 18;
+            // 
+            // checkFinancefi
+            // 
+            this.checkFinancefi.AutoSize = true;
+            this.checkFinancefi.Checked = true;
+            this.checkFinancefi.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkFinancefi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFinancefi.Location = new System.Drawing.Point(439, 243);
+            this.checkFinancefi.Name = "checkFinancefi";
+            this.checkFinancefi.Size = new System.Drawing.Size(177, 23);
+            this.checkFinancefi.TabIndex = 17;
+            this.checkFinancefi.Text = "Financial Department";
+            this.checkFinancefi.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(106, 203);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(103, 17);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Who Can View";
+            // 
+            // checkITfi
+            // 
+            this.checkITfi.AutoSize = true;
+            this.checkITfi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkITfi.Location = new System.Drawing.Point(279, 243);
+            this.checkITfi.Name = "checkITfi";
+            this.checkITfi.Size = new System.Drawing.Size(129, 23);
+            this.checkITfi.TabIndex = 15;
+            this.checkITfi.Text = "IT Department";
+            this.checkITfi.UseVisualStyleBackColor = true;
+            // 
+            // checkHRfi
+            // 
+            this.checkHRfi.AutoSize = true;
+            this.checkHRfi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkHRfi.Location = new System.Drawing.Point(110, 243);
+            this.checkHRfi.Name = "checkHRfi";
+            this.checkHRfi.Size = new System.Drawing.Size(138, 23);
+            this.checkHRfi.TabIndex = 14;
+            this.checkHRfi.Text = "HR Department";
+            this.checkHRfi.UseVisualStyleBackColor = true;
+            // 
+            // btnAddFinanceDoc
+            // 
+            this.btnAddFinanceDoc.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddFinanceDoc.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFinanceDoc.ForeColor = System.Drawing.Color.White;
+            this.btnAddFinanceDoc.Location = new System.Drawing.Point(279, 32);
+            this.btnAddFinanceDoc.Name = "btnAddFinanceDoc";
+            this.btnAddFinanceDoc.Size = new System.Drawing.Size(195, 38);
+            this.btnAddFinanceDoc.TabIndex = 13;
+            this.btnAddFinanceDoc.Text = "Choose Document";
+            this.btnAddFinanceDoc.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(106, 42);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 17);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Add File";
+            // 
+            // btnPersonalDocSave
+            // 
+            this.btnPersonalDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnPersonalDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPersonalDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnPersonalDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonalDocSave.Image")));
+            this.btnPersonalDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonalDocSave.Location = new System.Drawing.Point(783, 98);
+            this.btnPersonalDocSave.Name = "btnPersonalDocSave";
+            this.btnPersonalDocSave.Size = new System.Drawing.Size(263, 58);
+            this.btnPersonalDocSave.TabIndex = 22;
+            this.btnPersonalDocSave.Text = "Save Personal Document";
+            this.btnPersonalDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonalDocSave.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 78);
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(106, 93);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 19);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Add File";
+            this.label8.Size = new System.Drawing.Size(117, 17);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Document Name";
             // 
-            // openFileDialog1
+            // txtITPersonalName
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.txtITPersonalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtITPersonalName.Location = new System.Drawing.Point(279, 90);
+            this.txtITPersonalName.Name = "txtITPersonalName";
+            this.txtITPersonalName.Size = new System.Drawing.Size(336, 24);
+            this.txtITPersonalName.TabIndex = 20;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(106, 137);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(119, 17);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "About Document";
+            // 
+            // txtPersonalDocAbout
+            // 
+            this.txtPersonalDocAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPersonalDocAbout.Location = new System.Drawing.Point(279, 134);
+            this.txtPersonalDocAbout.Name = "txtPersonalDocAbout";
+            this.txtPersonalDocAbout.Size = new System.Drawing.Size(336, 24);
+            this.txtPersonalDocAbout.TabIndex = 18;
+            // 
+            // checkFIpersonal
+            // 
+            this.checkFIpersonal.AutoSize = true;
+            this.checkFIpersonal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFIpersonal.Location = new System.Drawing.Point(439, 243);
+            this.checkFIpersonal.Name = "checkFIpersonal";
+            this.checkFIpersonal.Size = new System.Drawing.Size(177, 23);
+            this.checkFIpersonal.TabIndex = 17;
+            this.checkFIpersonal.Text = "Financial Department";
+            this.checkFIpersonal.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(106, 203);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(103, 17);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Who Can View";
+            // 
+            // checkITpersonal
+            // 
+            this.checkITpersonal.AutoSize = true;
+            this.checkITpersonal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkITpersonal.Location = new System.Drawing.Point(279, 243);
+            this.checkITpersonal.Name = "checkITpersonal";
+            this.checkITpersonal.Size = new System.Drawing.Size(129, 23);
+            this.checkITpersonal.TabIndex = 15;
+            this.checkITpersonal.Text = "IT Department";
+            this.checkITpersonal.UseVisualStyleBackColor = true;
+            // 
+            // checkHRpersonal
+            // 
+            this.checkHRpersonal.AutoSize = true;
+            this.checkHRpersonal.Checked = true;
+            this.checkHRpersonal.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkHRpersonal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkHRpersonal.Location = new System.Drawing.Point(110, 243);
+            this.checkHRpersonal.Name = "checkHRpersonal";
+            this.checkHRpersonal.Size = new System.Drawing.Size(138, 23);
+            this.checkHRpersonal.TabIndex = 14;
+            this.checkHRpersonal.Text = "HR Department";
+            this.checkHRpersonal.UseVisualStyleBackColor = true;
+            // 
+            // btnAddPersonalDoc
+            // 
+            this.btnAddPersonalDoc.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddPersonalDoc.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPersonalDoc.ForeColor = System.Drawing.Color.White;
+            this.btnAddPersonalDoc.Location = new System.Drawing.Point(279, 32);
+            this.btnAddPersonalDoc.Name = "btnAddPersonalDoc";
+            this.btnAddPersonalDoc.Size = new System.Drawing.Size(195, 38);
+            this.btnAddPersonalDoc.TabIndex = 13;
+            this.btnAddPersonalDoc.Text = "Choose Document";
+            this.btnAddPersonalDoc.UseVisualStyleBackColor = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(106, 42);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(64, 17);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "Add File";
             // 
             // AddDocument
             // 
@@ -435,24 +699,43 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkIT;
         private System.Windows.Forms.CheckBox checkHR;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxAbout;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxDocName;
         private System.Windows.Forms.Button btnHrDocSave;
+        private System.Windows.Forms.Button btnITDocSave;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtITDocName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtITDocAbout;
+        private System.Windows.Forms.CheckBox checkFinanceit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox checkITit;
+        private System.Windows.Forms.CheckBox checkHRit;
+        private System.Windows.Forms.Button btnAddITDoc;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnFinanceDocSave;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtFinanceDocName;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtFinanceDocAbout;
+        private System.Windows.Forms.CheckBox checkFinancefi;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox checkITfi;
+        private System.Windows.Forms.CheckBox checkHRfi;
+        private System.Windows.Forms.Button btnAddFinanceDoc;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnPersonalDocSave;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtITPersonalName;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtPersonalDocAbout;
+        private System.Windows.Forms.CheckBox checkFIpersonal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox checkITpersonal;
+        private System.Windows.Forms.CheckBox checkHRpersonal;
+        private System.Windows.Forms.Button btnAddPersonalDoc;
+        private System.Windows.Forms.Label label16;
     }
 }
