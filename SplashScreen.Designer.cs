@@ -44,11 +44,11 @@ namespace TravelerDetailsManagementSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(596, 685);
+            this.label1.Location = new System.Drawing.Point(693, 685);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 17);
+            this.label1.Size = new System.Drawing.Size(239, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Customer Details Management System";
+            this.label1.Text = "Document Management System";
             // 
             // label2
             // 
@@ -58,17 +58,19 @@ namespace TravelerDetailsManagementSystem
             this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(551, 585);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(307, 73);
+            this.label2.Size = new System.Drawing.Size(523, 91);
             this.label2.TabIndex = 2;
-            this.label2.Text = "TravelMe";
+            this.label2.Text = "Rapidventure";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.Location = new System.Drawing.Point(521, 721);
+            this.panel1.Location = new System.Drawing.Point(595, 721);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 17);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelSlide
             // 
@@ -77,6 +79,7 @@ namespace TravelerDetailsManagementSystem
             this.panelSlide.Name = "panelSlide";
             this.panelSlide.Size = new System.Drawing.Size(91, 16);
             this.panelSlide.TabIndex = 4;
+            this.panelSlide.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlide_Paint);
             // 
             // timer1
             // 

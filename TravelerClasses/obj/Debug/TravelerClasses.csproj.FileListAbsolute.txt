@@ -14,3 +14,9 @@ C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\Tr
 C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.dll
 C:\Users\ASUS\source\repos\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.pdb
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\bin\Debug\TravelerClasses.dll
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\bin\Debug\TravelerClasses.pdb
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csproj.AssemblyReference.cache
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.dll
+D:\Projects\Visual Studio Projects\Traveller Copy\TravelerManagementSystem\TravelerClasses\obj\Debug\TravelerClasses.pdb
