@@ -30,22 +30,22 @@ namespace TravelerDetailsManagementSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Town Report");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Purpose Report");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Food Report");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Monthly Reports");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Yearly Reports");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("No of Nights Report");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Other Reports");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Town Report");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Purpose Report");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Food Report");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Monthly Reports");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Yearly Reports");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("No of Nights Report");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Other Reports");
             this.LeftMainflowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTraveler = new System.Windows.Forms.Button();
@@ -55,9 +55,9 @@ namespace TravelerDetailsManagementSystem
             this.btnReport = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnOutgoingDoc = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MaintabControl = new System.Windows.Forms.TabControl();
             this.tabFrontScreen = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
             this.LeftMainflowLayoutPanel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.MaintabControl.SuspendLayout();
@@ -160,27 +160,27 @@ namespace TravelerDetailsManagementSystem
             this.treeViewReport.Location = new System.Drawing.Point(0, 59);
             this.treeViewReport.Margin = new System.Windows.Forms.Padding(4);
             this.treeViewReport.Name = "treeViewReport";
-            treeNode19.Name = "Node7";
-            treeNode19.Text = "Town Report";
-            treeNode20.Name = "Node8";
-            treeNode20.Text = "Purpose Report";
-            treeNode21.Name = "Node9";
-            treeNode21.Text = "Food Report";
-            treeNode22.Name = "Node10";
-            treeNode22.Text = "Monthly Reports";
-            treeNode23.Name = "Node11";
-            treeNode23.Text = "Yearly Reports";
-            treeNode24.Name = "Node12";
-            treeNode24.Text = "No of Nights Report";
-            treeNode25.Name = "Node13";
-            treeNode25.Text = "Vehicle Type Report";
-            treeNode26.Name = "Node0";
-            treeNode26.Text = "Main Reports";
-            treeNode27.Name = "Node14";
-            treeNode27.Text = "Other Reports";
+            treeNode1.Name = "Node7";
+            treeNode1.Text = "Town Report";
+            treeNode2.Name = "Node8";
+            treeNode2.Text = "Purpose Report";
+            treeNode3.Name = "Node9";
+            treeNode3.Text = "Food Report";
+            treeNode4.Name = "Node10";
+            treeNode4.Text = "Monthly Reports";
+            treeNode5.Name = "Node11";
+            treeNode5.Text = "Yearly Reports";
+            treeNode6.Name = "Node12";
+            treeNode6.Text = "No of Nights Report";
+            treeNode7.Name = "Node13";
+            treeNode7.Text = "Vehicle Type Report";
+            treeNode8.Name = "Node0";
+            treeNode8.Text = "Main Reports";
+            treeNode9.Name = "Node14";
+            treeNode9.Text = "Other Reports";
             this.treeViewReport.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode26,
-            treeNode27});
+            treeNode8,
+            treeNode9});
             this.treeViewReport.Size = new System.Drawing.Size(267, 0);
             this.treeViewReport.TabIndex = 3;
             // 
@@ -242,6 +242,26 @@ namespace TravelerDetailsManagementSystem
             this.btnOutgoingDoc.UseVisualStyleBackColor = false;
             this.btnOutgoingDoc.Click += new System.EventHandler(this.btnOutgoingDoc_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(3, 382);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(267, 59);
+            this.button3.TabIndex = 6;
+            this.button3.Tag = "AddDocument";
+            this.button3.Text = "Add Documents";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MaintabControl
             // 
             this.MaintabControl.Controls.Add(this.tabFrontScreen);
@@ -266,26 +286,6 @@ namespace TravelerDetailsManagementSystem
             this.tabFrontScreen.Size = new System.Drawing.Size(1046, 702);
             this.tabFrontScreen.TabIndex = 0;
             this.tabFrontScreen.Text = "Front Screen";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(3, 382);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(267, 59);
-            this.button3.TabIndex = 6;
-            this.button3.Tag = "AddDocument";
-            this.button3.Text = "Add Documents";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 

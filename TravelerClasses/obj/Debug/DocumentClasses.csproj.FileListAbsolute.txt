@@ -1,0 +1,6 @@
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\bin\Debug\TravelerClasses.dll
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\bin\Debug\TravelerClasses.pdb
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\obj\Debug\DocumentClasses.csproj.AssemblyReference.cache
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\obj\Debug\DocumentClasses.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\obj\Debug\TravelerClasses.dll
+D:\Projects\Visual Studio Projects\Document Management System\TravelerClasses\obj\Debug\TravelerClasses.pdb
