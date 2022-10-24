@@ -288,5 +288,9 @@ namespace TravelerDetailsManagementSystem
 
         #endregion
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenForm((Button)sender);
+        }
     }
 }

@@ -181,10 +181,14 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             comboTravelOtherPlace.Visible = false;
             txtOtherPlaces.Visible = false;
         }
+
+
+
         #endregion
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

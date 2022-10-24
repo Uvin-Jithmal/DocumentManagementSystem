@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDocumentDA.cs" />
     <Compile Include="Common\Execute.cs" />
     <Compile Include="Connection\SqlConn.cs" />
     <Compile Include="MealDA.cs" />

@@ -124,7 +124,7 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.toolStripSeparator4});
             this.tsMainToolBar.Location = new System.Drawing.Point(0, 0);
             this.tsMainToolBar.Name = "tsMainToolBar";
-            this.tsMainToolBar.Size = new System.Drawing.Size(879, 42);
+            this.tsMainToolBar.Size = new System.Drawing.Size(1172, 44);
             this.tsMainToolBar.TabIndex = 0;
             this.tsMainToolBar.Text = "toolStrip1";
             // 
@@ -135,14 +135,14 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(52, 39);
+            this.btnRefresh.Size = new System.Drawing.Size(64, 41);
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 44);
             // 
             // btnDelete
             // 
@@ -151,14 +151,15 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(46, 39);
+            this.btnDelete.Size = new System.Drawing.Size(56, 41);
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
             // 
             // btnUpdate
             // 
@@ -167,14 +168,14 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(47, 39);
+            this.btnUpdate.Size = new System.Drawing.Size(59, 41);
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
             // 
             // btnSearch
             // 
@@ -183,14 +184,14 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(48, 39);
+            this.btnSearch.Size = new System.Drawing.Size(56, 41);
             this.btnSearch.Text = "Search";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 44);
             // 
             // btnReport
             // 
@@ -199,14 +200,14 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(46, 39);
+            this.btnReport.Size = new System.Drawing.Size(58, 41);
             this.btnReport.Text = "Report";
             this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 44);
             // 
             // btnSave
             // 
@@ -215,7 +216,7 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(36, 39);
+            this.btnSave.Size = new System.Drawing.Size(43, 41);
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -223,7 +224,7 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 42);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 44);
             // 
             // tabControl1
             // 
@@ -231,10 +232,11 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 42);
+            this.tabControl1.Location = new System.Drawing.Point(0, 44);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(879, 430);
+            this.tabControl1.Size = new System.Drawing.Size(1172, 537);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -283,10 +285,11 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.tabPage1.Controls.Add(this.txtTravelerName);
             this.tabPage1.Controls.Add(this.txtTravelerID);
             this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(871, 402);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1164, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -300,9 +303,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             "2",
             "3",
             "4"});
-            this.comboRoomType.Location = new System.Drawing.Point(156, 259);
+            this.comboRoomType.Location = new System.Drawing.Point(208, 319);
+            this.comboRoomType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboRoomType.Name = "comboRoomType";
-            this.comboRoomType.Size = new System.Drawing.Size(188, 23);
+            this.comboRoomType.Size = new System.Drawing.Size(249, 27);
             this.comboRoomType.TabIndex = 97;
             // 
             // radioOthernotes
@@ -310,9 +314,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioOthernotes.AutoSize = true;
             this.radioOthernotes.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioOthernotes.ForeColor = System.Drawing.Color.Black;
-            this.radioOthernotes.Location = new System.Drawing.Point(525, 336);
+            this.radioOthernotes.Location = new System.Drawing.Point(700, 414);
+            this.radioOthernotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOthernotes.Name = "radioOthernotes";
-            this.radioOthernotes.Size = new System.Drawing.Size(53, 19);
+            this.radioOthernotes.Size = new System.Drawing.Size(63, 21);
             this.radioOthernotes.TabIndex = 96;
             this.radioOthernotes.TabStop = true;
             this.radioOthernotes.Text = "Other";
@@ -324,9 +329,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioCelebrity.AutoSize = true;
             this.radioCelebrity.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioCelebrity.ForeColor = System.Drawing.Color.Black;
-            this.radioCelebrity.Location = new System.Drawing.Point(156, 336);
+            this.radioCelebrity.Location = new System.Drawing.Point(208, 414);
+            this.radioCelebrity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioCelebrity.Name = "radioCelebrity";
-            this.radioCelebrity.Size = new System.Drawing.Size(70, 19);
+            this.radioCelebrity.Size = new System.Drawing.Size(82, 21);
             this.radioCelebrity.TabIndex = 93;
             this.radioCelebrity.TabStop = true;
             this.radioCelebrity.Text = "Celebrity";
@@ -342,9 +348,11 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.groupBox1.Controls.Add(this.radioOther);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox1.Location = new System.Drawing.Point(525, 51);
+            this.groupBox1.Location = new System.Drawing.Point(700, 63);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(325, 118);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(433, 145);
             this.groupBox1.TabIndex = 92;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Purpose";
@@ -360,9 +368,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             "Yala National Park",
             "Thangall Beach",
             "Kumana National Park"});
-            this.comboTravelOtherPlace.Location = new System.Drawing.Point(18, 72);
+            this.comboTravelOtherPlace.Location = new System.Drawing.Point(24, 89);
+            this.comboTravelOtherPlace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboTravelOtherPlace.Name = "comboTravelOtherPlace";
-            this.comboTravelOtherPlace.Size = new System.Drawing.Size(291, 23);
+            this.comboTravelOtherPlace.Size = new System.Drawing.Size(387, 25);
             this.comboTravelOtherPlace.TabIndex = 48;
             // 
             // radioJustVisit
@@ -370,9 +379,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioJustVisit.AutoSize = true;
             this.radioJustVisit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioJustVisit.ForeColor = System.Drawing.Color.Black;
-            this.radioJustVisit.Location = new System.Drawing.Point(18, 41);
+            this.radioJustVisit.Location = new System.Drawing.Point(24, 50);
+            this.radioJustVisit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioJustVisit.Name = "radioJustVisit";
-            this.radioJustVisit.Size = new System.Drawing.Size(84, 19);
+            this.radioJustVisit.Size = new System.Drawing.Size(99, 21);
             this.radioJustVisit.TabIndex = 44;
             this.radioJustVisit.TabStop = true;
             this.radioJustVisit.Text = "Just Visiting";
@@ -383,9 +393,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.txtOtherPlaces.BackColor = System.Drawing.SystemColors.Menu;
             this.txtOtherPlaces.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtherPlaces.Location = new System.Drawing.Point(18, 73);
+            this.txtOtherPlaces.Location = new System.Drawing.Point(24, 90);
+            this.txtOtherPlaces.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOtherPlaces.Name = "txtOtherPlaces";
-            this.txtOtherPlaces.Size = new System.Drawing.Size(291, 21);
+            this.txtOtherPlaces.Size = new System.Drawing.Size(387, 25);
             this.txtOtherPlaces.TabIndex = 47;
             // 
             // radioTravelOtherPlace
@@ -393,9 +404,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioTravelOtherPlace.AutoSize = true;
             this.radioTravelOtherPlace.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioTravelOtherPlace.ForeColor = System.Drawing.Color.Black;
-            this.radioTravelOtherPlace.Location = new System.Drawing.Point(119, 41);
+            this.radioTravelOtherPlace.Location = new System.Drawing.Point(159, 50);
+            this.radioTravelOtherPlace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioTravelOtherPlace.Name = "radioTravelOtherPlace";
-            this.radioTravelOtherPlace.Size = new System.Drawing.Size(115, 19);
+            this.radioTravelOtherPlace.Size = new System.Drawing.Size(141, 21);
             this.radioTravelOtherPlace.TabIndex = 45;
             this.radioTravelOtherPlace.TabStop = true;
             this.radioTravelOtherPlace.Text = "Travel Other Place";
@@ -407,9 +419,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioOther.AutoSize = true;
             this.radioOther.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioOther.ForeColor = System.Drawing.Color.Black;
-            this.radioOther.Location = new System.Drawing.Point(256, 41);
+            this.radioOther.Location = new System.Drawing.Point(341, 50);
+            this.radioOther.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(53, 19);
+            this.radioOther.Size = new System.Drawing.Size(63, 21);
             this.radioOther.TabIndex = 46;
             this.radioOther.TabStop = true;
             this.radioOther.Text = "Other";
@@ -421,9 +434,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioExcelentCus.AutoSize = true;
             this.radioExcelentCus.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioExcelentCus.ForeColor = System.Drawing.Color.Black;
-            this.radioExcelentCus.Location = new System.Drawing.Point(265, 336);
+            this.radioExcelentCus.Location = new System.Drawing.Point(353, 414);
+            this.radioExcelentCus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioExcelentCus.Name = "radioExcelentCus";
-            this.radioExcelentCus.Size = new System.Drawing.Size(115, 19);
+            this.radioExcelentCus.Size = new System.Drawing.Size(141, 21);
             this.radioExcelentCus.TabIndex = 94;
             this.radioExcelentCus.TabStop = true;
             this.radioExcelentCus.Text = "Excelent Customer";
@@ -435,9 +449,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.radioBad.AutoSize = true;
             this.radioBad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioBad.ForeColor = System.Drawing.Color.Black;
-            this.radioBad.Location = new System.Drawing.Point(408, 336);
+            this.radioBad.Location = new System.Drawing.Point(544, 414);
+            this.radioBad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBad.Name = "radioBad";
-            this.radioBad.Size = new System.Drawing.Size(96, 19);
+            this.radioBad.Size = new System.Drawing.Size(117, 21);
             this.radioBad.TabIndex = 95;
             this.radioBad.TabStop = true;
             this.radioBad.Text = "Bad Behaviour";
@@ -449,9 +464,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(135, 78);
+            this.label27.Location = new System.Drawing.Point(180, 96);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(15, 17);
+            this.label27.Size = new System.Drawing.Size(19, 21);
             this.label27.TabIndex = 91;
             this.label27.Text = "*";
             // 
@@ -460,9 +476,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(135, 288);
+            this.label26.Location = new System.Drawing.Point(180, 354);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(15, 17);
+            this.label26.Size = new System.Drawing.Size(19, 21);
             this.label26.TabIndex = 90;
             this.label26.Text = "*";
             // 
@@ -471,9 +488,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(135, 313);
+            this.label25.Location = new System.Drawing.Point(180, 385);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(15, 17);
+            this.label25.Size = new System.Drawing.Size(19, 21);
             this.label25.TabIndex = 89;
             this.label25.Text = "*";
             // 
@@ -482,9 +500,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(135, 262);
+            this.label23.Location = new System.Drawing.Point(180, 322);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(15, 17);
+            this.label23.Size = new System.Drawing.Size(19, 21);
             this.label23.TabIndex = 88;
             this.label23.Text = "*";
             // 
@@ -493,9 +512,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(135, 240);
+            this.label22.Location = new System.Drawing.Point(180, 295);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(15, 17);
+            this.label22.Size = new System.Drawing.Size(19, 21);
             this.label22.TabIndex = 87;
             this.label22.Text = "*";
             // 
@@ -504,9 +524,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(135, 194);
+            this.label21.Location = new System.Drawing.Point(180, 239);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(15, 17);
+            this.label21.Size = new System.Drawing.Size(19, 21);
             this.label21.TabIndex = 86;
             this.label21.Text = "*";
             // 
@@ -515,9 +536,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(135, 170);
+            this.label20.Location = new System.Drawing.Point(180, 209);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(15, 17);
+            this.label20.Size = new System.Drawing.Size(19, 21);
             this.label20.TabIndex = 85;
             this.label20.Text = "*";
             // 
@@ -526,9 +548,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(135, 147);
+            this.label18.Location = new System.Drawing.Point(180, 181);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(15, 17);
+            this.label18.Size = new System.Drawing.Size(19, 21);
             this.label18.TabIndex = 84;
             this.label18.Text = "*";
             // 
@@ -537,9 +560,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(135, 55);
+            this.label19.Location = new System.Drawing.Point(180, 68);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(15, 17);
+            this.label19.Size = new System.Drawing.Size(19, 21);
             this.label19.TabIndex = 83;
             this.label19.Text = "*";
             // 
@@ -552,18 +576,20 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             "Van",
             "SUV",
             "Bus"});
-            this.comboVehicleType.Location = new System.Drawing.Point(156, 284);
+            this.comboVehicleType.Location = new System.Drawing.Point(208, 350);
+            this.comboVehicleType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboVehicleType.Name = "comboVehicleType";
-            this.comboVehicleType.Size = new System.Drawing.Size(137, 23);
+            this.comboVehicleType.Size = new System.Drawing.Size(181, 27);
             this.comboVehicleType.TabIndex = 82;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(32, 287);
+            this.label17.Location = new System.Drawing.Point(43, 353);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 15);
+            this.label17.Size = new System.Drawing.Size(80, 17);
             this.label17.TabIndex = 81;
             this.label17.Text = "Vehicle type";
             // 
@@ -571,9 +597,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(32, 338);
+            this.label16.Location = new System.Drawing.Point(43, 416);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(73, 15);
+            this.label16.Size = new System.Drawing.Size(89, 17);
             this.label16.TabIndex = 80;
             this.label16.Text = "Special Notes";
             // 
@@ -581,9 +608,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(32, 312);
+            this.label14.Location = new System.Drawing.Point(43, 384);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 15);
+            this.label14.Size = new System.Drawing.Size(55, 17);
             this.label14.TabIndex = 79;
             this.label14.Text = "Amount";
             // 
@@ -591,26 +619,29 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.txtOtherNotes.BackColor = System.Drawing.SystemColors.Menu;
             this.txtOtherNotes.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtherNotes.Location = new System.Drawing.Point(156, 364);
+            this.txtOtherNotes.Location = new System.Drawing.Point(208, 448);
+            this.txtOtherNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOtherNotes.Name = "txtOtherNotes";
-            this.txtOtherNotes.Size = new System.Drawing.Size(348, 21);
+            this.txtOtherNotes.Size = new System.Drawing.Size(463, 25);
             this.txtOtherNotes.TabIndex = 78;
             // 
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmount.Location = new System.Drawing.Point(156, 309);
+            this.txtAmount.Location = new System.Drawing.Point(208, 380);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(188, 21);
+            this.txtAmount.Size = new System.Drawing.Size(249, 25);
             this.txtAmount.TabIndex = 77;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(32, 263);
+            this.label10.Location = new System.Drawing.Point(43, 324);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 15);
+            this.label10.Size = new System.Drawing.Size(76, 17);
             this.label10.TabIndex = 76;
             this.label10.Text = "Room Type";
             // 
@@ -618,9 +649,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(32, 239);
+            this.label11.Location = new System.Drawing.Point(43, 294);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 15);
+            this.label11.Size = new System.Drawing.Size(84, 17);
             this.label11.TabIndex = 75;
             this.label11.Text = "No of Nights";
             // 
@@ -628,35 +660,39 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(32, 216);
+            this.label12.Location = new System.Drawing.Point(43, 266);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 15);
+            this.label12.Size = new System.Drawing.Size(102, 17);
             this.label12.TabIndex = 74;
             this.label12.Text = "No of Members";
             // 
             // txtNON
             // 
             this.txtNON.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNON.Location = new System.Drawing.Point(156, 236);
+            this.txtNON.Location = new System.Drawing.Point(208, 290);
+            this.txtNON.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNON.Name = "txtNON";
-            this.txtNON.Size = new System.Drawing.Size(188, 21);
+            this.txtNON.Size = new System.Drawing.Size(249, 25);
             this.txtNON.TabIndex = 71;
             // 
             // txtNOM
             // 
             this.txtNOM.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNOM.Location = new System.Drawing.Point(156, 213);
+            this.txtNOM.Location = new System.Drawing.Point(208, 262);
+            this.txtNOM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNOM.Name = "txtNOM";
-            this.txtNOM.Size = new System.Drawing.Size(188, 21);
+            this.txtNOM.Size = new System.Drawing.Size(249, 25);
             this.txtNOM.TabIndex = 70;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(32, 193);
+            this.label9.Location = new System.Drawing.Point(43, 238);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 15);
+            this.label9.Size = new System.Drawing.Size(56, 17);
             this.label9.TabIndex = 69;
             this.label9.Text = "Date To";
             // 
@@ -664,9 +700,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(32, 169);
+            this.label8.Location = new System.Drawing.Point(43, 208);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 15);
+            this.label8.Size = new System.Drawing.Size(72, 17);
             this.label8.TabIndex = 68;
             this.label8.Text = "Date From";
             // 
@@ -674,9 +711,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(32, 146);
+            this.label7.Location = new System.Drawing.Point(43, 180);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 15);
+            this.label7.Size = new System.Drawing.Size(41, 17);
             this.label7.TabIndex = 67;
             this.label7.Text = "Town";
             // 
@@ -684,9 +722,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 123);
+            this.label6.Location = new System.Drawing.Point(43, 151);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 15);
+            this.label6.Size = new System.Drawing.Size(55, 17);
             this.label6.TabIndex = 66;
             this.label6.Text = "Country";
             // 
@@ -694,9 +733,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 100);
+            this.label5.Location = new System.Drawing.Point(43, 123);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 15);
+            this.label5.Size = new System.Drawing.Size(41, 17);
             this.label5.TabIndex = 65;
             this.label5.Text = "Email";
             // 
@@ -704,9 +744,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 77);
+            this.label4.Location = new System.Drawing.Point(43, 95);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.Size = new System.Drawing.Size(67, 17);
             this.label4.TabIndex = 64;
             this.label4.Text = "Phone No";
             // 
@@ -714,9 +755,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.lblTownID.AutoSize = true;
             this.lblTownID.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTownID.Location = new System.Drawing.Point(420, 146);
+            this.lblTownID.Location = new System.Drawing.Point(560, 180);
+            this.lblTownID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTownID.Name = "lblTownID";
-            this.lblTownID.Size = new System.Drawing.Size(13, 15);
+            this.lblTownID.Size = new System.Drawing.Size(15, 17);
             this.lblTownID.TabIndex = 63;
             this.lblTownID.Text = "1";
             // 
@@ -724,9 +766,10 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 54);
+            this.label2.Location = new System.Drawing.Point(43, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.Size = new System.Drawing.Size(97, 17);
             this.label2.TabIndex = 62;
             this.label2.Text = "Traveler Name";
             // 
@@ -734,77 +777,86 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 31);
+            this.label1.Location = new System.Drawing.Point(43, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 61;
             this.label1.Text = "Traveler ID";
             // 
             // dtpTo
             // 
             this.dtpTo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpTo.Location = new System.Drawing.Point(156, 190);
+            this.dtpTo.Location = new System.Drawing.Point(208, 234);
+            this.dtpTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(200, 21);
+            this.dtpTo.Size = new System.Drawing.Size(265, 25);
             this.dtpTo.TabIndex = 60;
             // 
             // dtpFrom
             // 
             this.dtpFrom.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFrom.Location = new System.Drawing.Point(156, 166);
+            this.dtpFrom.Location = new System.Drawing.Point(208, 204);
+            this.dtpFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(200, 21);
+            this.dtpFrom.Size = new System.Drawing.Size(265, 25);
             this.dtpFrom.TabIndex = 59;
             // 
             // txtTownName
             // 
             this.txtTownName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTownName.Location = new System.Drawing.Point(156, 143);
+            this.txtTownName.Location = new System.Drawing.Point(208, 176);
+            this.txtTownName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTownName.Name = "txtTownName";
-            this.txtTownName.Size = new System.Drawing.Size(260, 21);
+            this.txtTownName.Size = new System.Drawing.Size(345, 25);
             this.txtTownName.TabIndex = 58;
             // 
             // txtCountry
             // 
             this.txtCountry.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountry.Location = new System.Drawing.Point(156, 120);
+            this.txtCountry.Location = new System.Drawing.Point(208, 148);
+            this.txtCountry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(188, 21);
+            this.txtCountry.Size = new System.Drawing.Size(249, 25);
             this.txtCountry.TabIndex = 57;
             this.txtCountry.Text = "Sri Lanka";
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(156, 97);
+            this.txtEmail.Location = new System.Drawing.Point(208, 119);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(260, 21);
+            this.txtEmail.Size = new System.Drawing.Size(345, 25);
             this.txtEmail.TabIndex = 56;
             // 
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(156, 74);
+            this.txtPhone.Location = new System.Drawing.Point(208, 91);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(188, 21);
+            this.txtPhone.Size = new System.Drawing.Size(249, 25);
             this.txtPhone.TabIndex = 55;
             // 
             // txtTravelerName
             // 
             this.txtTravelerName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTravelerName.Location = new System.Drawing.Point(156, 51);
+            this.txtTravelerName.Location = new System.Drawing.Point(208, 63);
+            this.txtTravelerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTravelerName.Name = "txtTravelerName";
-            this.txtTravelerName.Size = new System.Drawing.Size(260, 21);
+            this.txtTravelerName.Size = new System.Drawing.Size(345, 25);
             this.txtTravelerName.TabIndex = 54;
             // 
             // txtTravelerID
             // 
             this.txtTravelerID.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtTravelerID.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTravelerID.Location = new System.Drawing.Point(156, 28);
+            this.txtTravelerID.Location = new System.Drawing.Point(208, 34);
+            this.txtTravelerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTravelerID.Name = "txtTravelerID";
             this.txtTravelerID.ReadOnly = true;
-            this.txtTravelerID.Size = new System.Drawing.Size(93, 21);
+            this.txtTravelerID.Size = new System.Drawing.Size(123, 25);
             this.txtTravelerID.TabIndex = 53;
             // 
             // tabPage2
@@ -813,10 +865,11 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(871, 402);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1164, 497);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Food Types";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -825,18 +878,21 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(35, 108);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(804, 279);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1072, 343);
             this.dataGridView1.TabIndex = 66;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 36);
+            this.label3.Location = new System.Drawing.Point(31, 44);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 16);
+            this.label3.Size = new System.Drawing.Size(127, 19);
             this.label3.TabIndex = 65;
             this.label3.Text = "Select Food Type";
             // 
@@ -845,22 +901,24 @@ namespace TravelerDetailsManagementSystem.TravelerForms
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(180, 29);
+            this.button1.Location = new System.Drawing.Point(240, 36);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 31);
+            this.button1.Size = new System.Drawing.Size(231, 38);
             this.button1.TabIndex = 0;
             this.button1.Text = "Food Type";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // Traveler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(879, 472);
+            this.ClientSize = new System.Drawing.Size(1172, 581);
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tsMainToolBar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Traveler";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

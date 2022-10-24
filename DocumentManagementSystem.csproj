@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDocument.Designer.cs">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\CommonModule.cs" />
     <Compile Include="Common\frmCommonSearch.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,12 @@
       <DependentUpon>frmReportViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="ExList.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,11 +125,17 @@
     <Compile Include="TravelerForms\Traveler.Designer.cs">
       <DependentUpon>Traveler.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddDocument.resx">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Common\frmCommonSearch.resx">
       <DependentUpon>frmCommonSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Common\frmReportViewer.resx">
       <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -161,6 +179,7 @@
   <ItemGroup>
     <Content Include="Resources\2650401.jpg" />
     <Content Include="Resources\icons8_Close_Window_15px.png" />
+    <None Include="Resources\MainImage.png" />
     <None Include="Resources\joyent_90px.png" />
   </ItemGroup>
   <ItemGroup>
