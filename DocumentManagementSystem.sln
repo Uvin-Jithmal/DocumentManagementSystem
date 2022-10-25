@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "Busin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{3E5B4B56-4D77-449B-A982-7633F205DEAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelerClasses", "TravelerClasses\TravelerClasses.csproj", "{79E50A60-8E62-4B22-8F56-429C23566778}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentClasses", "TravelerClasses\DocumentClasses.csproj", "{79E50A60-8E62-4B22-8F56-429C23566778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

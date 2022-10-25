@@ -52,9 +52,9 @@
       <Project>{3e5b4b56-4d77-449b-a982-7633f205deab}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TravelerClasses\TravelerClasses.csproj">
+    <ProjectReference Include="..\TravelerClasses\DocumentClasses.csproj">
       <Project>{79e50a60-8e62-4b22-8f56-429c23566778}</Project>
-      <Name>TravelerClasses</Name>
+      <Name>DocumentClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

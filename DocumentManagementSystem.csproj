@@ -190,9 +190,9 @@
       <Project>{25eeeab6-d699-483b-aed0-ad401bc08f8b}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="TravelerClasses\TravelerClasses.csproj">
+    <ProjectReference Include="TravelerClasses\DocumentClasses.csproj">
       <Project>{79e50a60-8e62-4b22-8f56-429c23566778}</Project>
-      <Name>TravelerClasses</Name>
+      <Name>DocumentClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

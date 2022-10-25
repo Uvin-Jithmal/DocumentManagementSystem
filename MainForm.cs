@@ -24,6 +24,9 @@ namespace TravelerDetailsManagementSystem
         Point _imageLocation = new Point(20, 4);
         Point imageHitArea = new Point(20, 4);
 
+        //Login Variable
+        //Form mf = new MainForm();
+
         #endregion
 
         #region Private Methods

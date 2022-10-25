@@ -55,9 +55,9 @@ namespace TravelerDetailsManagementSystem
             this.btnReport = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnOutgoingDoc = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MaintabControl = new System.Windows.Forms.TabControl();
             this.tabFrontScreen = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
             this.LeftMainflowLayoutPanel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.MaintabControl.SuspendLayout();
@@ -242,6 +242,26 @@ namespace TravelerDetailsManagementSystem
             this.btnOutgoingDoc.UseVisualStyleBackColor = false;
             this.btnOutgoingDoc.Click += new System.EventHandler(this.btnOutgoingDoc_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(3, 382);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(267, 59);
+            this.button3.TabIndex = 6;
+            this.button3.Tag = "AddDocument";
+            this.button3.Text = "Add Documents";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MaintabControl
             // 
             this.MaintabControl.Controls.Add(this.tabFrontScreen);
@@ -266,26 +286,6 @@ namespace TravelerDetailsManagementSystem
             this.tabFrontScreen.Size = new System.Drawing.Size(1046, 702);
             this.tabFrontScreen.TabIndex = 0;
             this.tabFrontScreen.Text = "Front Screen";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(3, 382);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(267, 59);
-            this.button3.TabIndex = 6;
-            this.button3.Tag = "AddDocument";
-            this.button3.Text = "Add Documents";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 
