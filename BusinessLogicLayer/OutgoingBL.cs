@@ -20,7 +20,22 @@ namespace BusinessLogicLayer
         {
             ObjoutgoingDA = new OutgoingDA();
             return ObjoutgoingDA.InsertHrDocument(objhrDocClass);
-        } 
+        }
+        public int InsertItDocument(ItDocClasses objhrDocClass)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.InsertItDocument(objhrDocClass);
+        }
+        public int InsertFinanceDocument(FinanceDocClasses objFinanceDocClass)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.InsertFinanceDocument(objFinanceDocClass);
+        }
+        public int InsertPersonalDocument(PersonalDocClasses objPersonalDocClass)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.InsertPersonalDocument(objPersonalDocClass);
+        }
         #endregion
     }
 }

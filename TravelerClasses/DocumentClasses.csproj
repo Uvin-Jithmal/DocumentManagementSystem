@@ -44,7 +44,10 @@
     <Compile Include="Customer\TravelerClass.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="MealClasses\Meals.cs" />
+    <Compile Include="OutgoingClasses\FinanceDocClasses.cs" />
     <Compile Include="OutgoingClasses\HrDocClass.cs" />
+    <Compile Include="OutgoingClasses\ItDocClasses.cs" />
+    <Compile Include="OutgoingClasses\PersonalDocClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.cs" />
   </ItemGroup>
