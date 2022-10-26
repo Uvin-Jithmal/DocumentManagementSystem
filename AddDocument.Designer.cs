@@ -43,9 +43,6 @@
             this.btnAddHrDoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnITDocSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtITDocName = new System.Windows.Forms.TextBox();
@@ -57,6 +54,7 @@
             this.checkHRit = new System.Windows.Forms.CheckBox();
             this.btnAddITDoc = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnFinanceDocSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFinanceDocName = new System.Windows.Forms.TextBox();
@@ -68,6 +66,7 @@
             this.checkHRfi = new System.Windows.Forms.CheckBox();
             this.btnAddFinanceDoc = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnPersonalDocSave = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtITPersonalName = new System.Windows.Forms.TextBox();
@@ -79,6 +78,7 @@
             this.checkHRpersonal = new System.Windows.Forms.CheckBox();
             this.btnAddPersonalDoc = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -261,52 +261,6 @@
             this.tabPage2.Text = "IT Documents";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btnFinanceDocSave);
-            this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Controls.Add(this.txtFinanceDocName);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.txtFinanceDocAbout);
-            this.tabPage3.Controls.Add(this.checkFinancefi);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.checkITfi);
-            this.tabPage3.Controls.Add(this.checkHRfi);
-            this.tabPage3.Controls.Add(this.btnAddFinanceDoc);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1153, 299);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Finance Documents";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.btnPersonalDocSave);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.txtITPersonalName);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.txtPersonalDocAbout);
-            this.tabPage4.Controls.Add(this.checkFIpersonal);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.checkITpersonal);
-            this.tabPage4.Controls.Add(this.checkHRpersonal);
-            this.tabPage4.Controls.Add(this.btnAddPersonalDoc);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1153, 299);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Personal Documents";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // btnITDocSave
             // 
             this.btnITDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -321,6 +275,7 @@
             this.btnITDocSave.Text = "Save IT Document";
             this.btnITDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnITDocSave.UseVisualStyleBackColor = false;
+            this.btnITDocSave.Click += new System.EventHandler(this.btnITDocSave_Click);
             // 
             // label3
             // 
@@ -414,6 +369,7 @@
             this.btnAddITDoc.TabIndex = 13;
             this.btnAddITDoc.Text = "Choose Document";
             this.btnAddITDoc.UseVisualStyleBackColor = false;
+            this.btnAddITDoc.Click += new System.EventHandler(this.btnAddITDoc_Click);
             // 
             // label11
             // 
@@ -424,6 +380,27 @@
             this.label11.Size = new System.Drawing.Size(64, 17);
             this.label11.TabIndex = 12;
             this.label11.Text = "Add File";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnFinanceDocSave);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.txtFinanceDocName);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.txtFinanceDocAbout);
+            this.tabPage3.Controls.Add(this.checkFinancefi);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.checkITfi);
+            this.tabPage3.Controls.Add(this.checkHRfi);
+            this.tabPage3.Controls.Add(this.btnAddFinanceDoc);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1153, 299);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Finance Documents";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnFinanceDocSave
             // 
@@ -439,6 +416,7 @@
             this.btnFinanceDocSave.Text = "Save Financial Document";
             this.btnFinanceDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFinanceDocSave.UseVisualStyleBackColor = false;
+            this.btnFinanceDocSave.Click += new System.EventHandler(this.btnFinanceDocSave_Click);
             // 
             // label5
             // 
@@ -532,6 +510,7 @@
             this.btnAddFinanceDoc.TabIndex = 13;
             this.btnAddFinanceDoc.Text = "Choose Document";
             this.btnAddFinanceDoc.UseVisualStyleBackColor = false;
+            this.btnAddFinanceDoc.Click += new System.EventHandler(this.btnAddFinanceDoc_Click);
             // 
             // label13
             // 
@@ -542,6 +521,27 @@
             this.label13.Size = new System.Drawing.Size(64, 17);
             this.label13.TabIndex = 12;
             this.label13.Text = "Add File";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnPersonalDocSave);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.txtITPersonalName);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.txtPersonalDocAbout);
+            this.tabPage4.Controls.Add(this.checkFIpersonal);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.checkITpersonal);
+            this.tabPage4.Controls.Add(this.checkHRpersonal);
+            this.tabPage4.Controls.Add(this.btnAddPersonalDoc);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1153, 299);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Personal Documents";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnPersonalDocSave
             // 
@@ -557,6 +557,7 @@
             this.btnPersonalDocSave.Text = "Save Personal Document";
             this.btnPersonalDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPersonalDocSave.UseVisualStyleBackColor = false;
+            this.btnPersonalDocSave.Click += new System.EventHandler(this.btnPersonalDocSave_Click);
             // 
             // label8
             // 
@@ -650,6 +651,7 @@
             this.btnAddPersonalDoc.TabIndex = 13;
             this.btnAddPersonalDoc.Text = "Choose Document";
             this.btnAddPersonalDoc.UseVisualStyleBackColor = false;
+            this.btnAddPersonalDoc.Click += new System.EventHandler(this.btnAddPersonalDoc_Click);
             // 
             // label16
             // 
@@ -660,6 +662,10 @@
             this.label16.Size = new System.Drawing.Size(64, 17);
             this.label16.TabIndex = 12;
             this.label16.Text = "Add File";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // AddDocument
             // 

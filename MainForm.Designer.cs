@@ -30,22 +30,22 @@ namespace TravelerDetailsManagementSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Town Report");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Purpose Report");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Food Report");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Monthly Reports");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Yearly Reports");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("No of Nights Report");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Other Reports");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Town Report");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Purpose Report");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Food Report");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Monthly Reports");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Yearly Reports");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("No of Nights Report");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Other Reports");
             this.LeftMainflowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTraveler = new System.Windows.Forms.Button();
@@ -160,27 +160,27 @@ namespace TravelerDetailsManagementSystem
             this.treeViewReport.Location = new System.Drawing.Point(0, 59);
             this.treeViewReport.Margin = new System.Windows.Forms.Padding(4);
             this.treeViewReport.Name = "treeViewReport";
-            treeNode19.Name = "Node7";
-            treeNode19.Text = "Town Report";
-            treeNode20.Name = "Node8";
-            treeNode20.Text = "Purpose Report";
-            treeNode21.Name = "Node9";
-            treeNode21.Text = "Food Report";
-            treeNode22.Name = "Node10";
-            treeNode22.Text = "Monthly Reports";
-            treeNode23.Name = "Node11";
-            treeNode23.Text = "Yearly Reports";
-            treeNode24.Name = "Node12";
-            treeNode24.Text = "No of Nights Report";
-            treeNode25.Name = "Node13";
-            treeNode25.Text = "Vehicle Type Report";
-            treeNode26.Name = "Node0";
-            treeNode26.Text = "Main Reports";
-            treeNode27.Name = "Node14";
-            treeNode27.Text = "Other Reports";
+            treeNode1.Name = "Node7";
+            treeNode1.Text = "Town Report";
+            treeNode2.Name = "Node8";
+            treeNode2.Text = "Purpose Report";
+            treeNode3.Name = "Node9";
+            treeNode3.Text = "Food Report";
+            treeNode4.Name = "Node10";
+            treeNode4.Text = "Monthly Reports";
+            treeNode5.Name = "Node11";
+            treeNode5.Text = "Yearly Reports";
+            treeNode6.Name = "Node12";
+            treeNode6.Text = "No of Nights Report";
+            treeNode7.Name = "Node13";
+            treeNode7.Text = "Vehicle Type Report";
+            treeNode8.Name = "Node0";
+            treeNode8.Text = "Main Reports";
+            treeNode9.Name = "Node14";
+            treeNode9.Text = "Other Reports";
             this.treeViewReport.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode26,
-            treeNode27});
+            treeNode8,
+            treeNode9});
             this.treeViewReport.Size = new System.Drawing.Size(267, 0);
             this.treeViewReport.TabIndex = 3;
             // 
