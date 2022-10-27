@@ -26,6 +26,7 @@ namespace TravelerDetailsManagementSystem
         ItDocClasses ObjItDocClass = new ItDocClasses();
         FinanceDocClasses ObjFinanceDocClass = new FinanceDocClasses();
         PersonalDocClasses ObjPersonalDocClass = new PersonalDocClasses();
+
         OutgoingBL ObjoutgoingBL = new OutgoingBL();
 
         #endregion

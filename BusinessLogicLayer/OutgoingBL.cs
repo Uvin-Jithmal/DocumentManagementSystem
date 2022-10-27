@@ -36,6 +36,42 @@ namespace BusinessLogicLayer
             ObjoutgoingDA = new OutgoingDA();
             return ObjoutgoingDA.InsertPersonalDocument(objPersonalDocClass);
         }
+
+
         #endregion
+
+
+        #region Retrieve HR/ IT/ Finance/ Personal Documents
+
+        //Retrieve HR Documents
+        public List<HrDocClass> RetrieveHRdocuments()
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.RetrieveHRdocuments();
+        }
+
+        //Retrieve IT Documents
+        public List<ItDocClasses> RetrieveITdocuments()
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.RetrieveITdocuments();
+        }
+
+        //Retrieve Finance Documents
+        public List<FinanceDocClasses> RetrieveFinancedocuments()
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.RetrieveFinancedocuments();
+        }
+
+        //Retrieve Personal Documents
+        public List<PersonalDocClasses> RetrievePersonaldocuments()
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.RetrievePersonaldocuments();
+        }
+
+        #endregion
+
     }
 }
