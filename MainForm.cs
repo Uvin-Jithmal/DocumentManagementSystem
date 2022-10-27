@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ERP_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -243,6 +244,7 @@ namespace TravelerDetailsManagementSystem
             //CloseImage = Properties.Resources.Close;
             MaintabControl.Padding = new Point(20, 4);
             this.MaintabControl.TabPages[MaintabControl.TabCount - 1].Text = "Home";
+            timer1.Start();
         }
 
         #region Button Click Events
@@ -293,8 +295,17 @@ namespace TravelerDetailsManagementSystem
             OpenForm((Button)sender);
         }
 
+
         #endregion
 
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            label2.Text = DateTime.Now.ToLongTimeString();
+            label3.Text = LoginForm.UserName;
+            label4.Text = LoginForm.Department;
+            label3.Visible = true;
+            label4.Visible = true;
+        }
     }
 }

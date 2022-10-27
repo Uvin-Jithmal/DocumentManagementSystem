@@ -37,18 +37,18 @@
             this.clmDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvITdocuments = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dgvFIdocuments = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dgvPersondocuments = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgvFIdocuments = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewButtonColumn4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dgvPersondocuments = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn5 = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -162,60 +162,6 @@
             this.dgvITdocuments.Size = new System.Drawing.Size(1321, 452);
             this.dgvITdocuments.TabIndex = 1;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dgvFIdocuments);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1442, 541);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Finance Documents";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dgvFIdocuments
-            // 
-            this.dgvFIdocuments.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dgvFIdocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFIdocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewButtonColumn3,
-            this.dataGridViewButtonColumn4});
-            this.dgvFIdocuments.Location = new System.Drawing.Point(61, 44);
-            this.dgvFIdocuments.Name = "dgvFIdocuments";
-            this.dgvFIdocuments.RowHeadersWidth = 51;
-            this.dgvFIdocuments.RowTemplate.Height = 24;
-            this.dgvFIdocuments.Size = new System.Drawing.Size(1321, 452);
-            this.dgvFIdocuments.TabIndex = 1;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.dgvPersondocuments);
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1442, 541);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Personal Documents";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // dgvPersondocuments
-            // 
-            this.dgvPersondocuments.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dgvPersondocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersondocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewButtonColumn5,
-            this.dataGridViewButtonColumn6});
-            this.dgvPersondocuments.Location = new System.Drawing.Point(61, 44);
-            this.dgvPersondocuments.Name = "dgvPersondocuments";
-            this.dgvPersondocuments.RowHeadersWidth = 51;
-            this.dgvPersondocuments.RowTemplate.Height = 24;
-            this.dgvPersondocuments.Size = new System.Drawing.Size(1321, 452);
-            this.dgvPersondocuments.TabIndex = 1;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ItDocumentName";
@@ -246,6 +192,33 @@
             this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
             this.dataGridViewButtonColumn2.Width = 75;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dgvFIdocuments);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1442, 541);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Finance Documents";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dgvFIdocuments
+            // 
+            this.dgvFIdocuments.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvFIdocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFIdocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewButtonColumn3,
+            this.dataGridViewButtonColumn4});
+            this.dgvFIdocuments.Location = new System.Drawing.Point(61, 44);
+            this.dgvFIdocuments.Name = "dgvFIdocuments";
+            this.dgvFIdocuments.RowHeadersWidth = 51;
+            this.dgvFIdocuments.RowTemplate.Height = 24;
+            this.dgvFIdocuments.Size = new System.Drawing.Size(1321, 452);
+            this.dgvFIdocuments.TabIndex = 1;
+            // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "FinanceDocumentName";
@@ -275,6 +248,33 @@
             this.dataGridViewButtonColumn4.MinimumWidth = 6;
             this.dataGridViewButtonColumn4.Name = "dataGridViewButtonColumn4";
             this.dataGridViewButtonColumn4.Width = 75;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dgvPersondocuments);
+            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1442, 541);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Personal Documents";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dgvPersondocuments
+            // 
+            this.dgvPersondocuments.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvPersondocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersondocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewButtonColumn5,
+            this.dataGridViewButtonColumn6});
+            this.dgvPersondocuments.Location = new System.Drawing.Point(61, 44);
+            this.dgvPersondocuments.Name = "dgvPersondocuments";
+            this.dgvPersondocuments.RowHeadersWidth = 51;
+            this.dgvPersondocuments.RowTemplate.Height = 24;
+            this.dgvPersondocuments.Size = new System.Drawing.Size(1321, 452);
+            this.dgvPersondocuments.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn5
             // 

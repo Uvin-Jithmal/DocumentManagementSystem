@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer;
+using ERP_System;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace TravelerDetailsManagementSystem
         {
             InitializeComponent();
             dgvHRdocuments.AutoGenerateColumns = false;
+
         }
 
         #region Private Variables
