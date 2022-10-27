@@ -17,5 +17,6 @@ namespace TravelerClasses.OutgoingClasses
         public Boolean FinanceCheck { get; set; }
         public DateTime AddedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
+
     }
 }

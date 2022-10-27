@@ -150,7 +150,6 @@ D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\Traveler
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\ERP_System.LoginForm.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.MainForm.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.MealMasterfile.Meal.resources
-D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.OutgoingDocuments.AddDocuments.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.Properties.Resources.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.SplashScreen.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.TravelerForms.Traveler.resources
@@ -159,3 +158,4 @@ D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\Document
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\DocumentManagementSystem.csproj.CopyComplete
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.exe
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.pdb
+D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.ViewDocument.resources

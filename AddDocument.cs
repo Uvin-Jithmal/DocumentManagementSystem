@@ -26,6 +26,7 @@ namespace TravelerDetailsManagementSystem
         ItDocClasses ObjItDocClass = new ItDocClasses();
         FinanceDocClasses ObjFinanceDocClass = new FinanceDocClasses();
         PersonalDocClasses ObjPersonalDocClass = new PersonalDocClasses();
+
         OutgoingBL ObjoutgoingBL = new OutgoingBL();
 
         #endregion
@@ -87,7 +88,7 @@ namespace TravelerDetailsManagementSystem
 
         #endregion
 
-        #region Save Button
+        #region Save HR Document Button
 
         //Save HR Document
         private void btnHrDocSave_Click(object sender, EventArgs e)
@@ -140,6 +141,8 @@ namespace TravelerDetailsManagementSystem
 
         #endregion
 
+        #region Save IT Document Button
+
         private void btnITDocSave_Click(object sender, EventArgs e)
         {
             try
@@ -187,7 +190,9 @@ namespace TravelerDetailsManagementSystem
                 CommonModule.ShowErrorMessage(ex);
             }
         }
+        #endregion
 
+        #region Save Finance Document Button
         private void btnFinanceDocSave_Click(object sender, EventArgs e)
         {
             try
@@ -235,7 +240,9 @@ namespace TravelerDetailsManagementSystem
                 CommonModule.ShowErrorMessage(ex);
             }
         }
+        #endregion
 
+        #region Save Personal Document Button
         private void btnPersonalDocSave_Click(object sender, EventArgs e)
         {
             try
@@ -254,6 +261,18 @@ namespace TravelerDetailsManagementSystem
                     ObjPersonalDocClass.PersonalFilePath = PersonalDocaPath;
                     ObjPersonalDocClass.PersonalDocumentName = txtITPersonalName.Text;
                     ObjPersonalDocClass.AboutPersonalDoc = txtPersonalDocAbout.Text;
+                    if (checkHRpersonal.Checked == true)
+                    {
+                        ObjPersonalDocClass.HrCheck = Convert.ToBoolean(1);
+                    }
+                    if (checkITpersonal.Checked == true)
+                    {
+                        ObjPersonalDocClass.ItCheck = Convert.ToBoolean(1);
+                    }
+                    if (checkFIpersonal.Checked == true)
+                    {
+                        ObjPersonalDocClass.FinanceCheck = Convert.ToBoolean(1);
+                    }
                     ObjPersonalDocClass.AddedDate = DateTime.Now;
                 }
 
@@ -269,6 +288,8 @@ namespace TravelerDetailsManagementSystem
             {
                 CommonModule.ShowErrorMessage(ex);
             }
-        }
+        } 
+        #endregion
+
     }
 }

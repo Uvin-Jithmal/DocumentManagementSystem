@@ -12,7 +12,11 @@ namespace TravelerClasses.OutgoingClasses
         public string PersonalFilePath { get; set; }
         public String PersonalDocumentName { get; set; }
         public String AboutPersonalDoc { get; set; }
+        public Boolean HrCheck { get; set; }
+        public Boolean ItCheck { get; set; }
+        public Boolean FinanceCheck { get; set; }
         public DateTime AddedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
+
     }
 }

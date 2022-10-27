@@ -19,6 +19,7 @@ namespace ERP_System
 
         //Public variable to display logged user anme in main form
         public static string UserName;
+        public static string Department;
 
         public LoginForm()
         {
@@ -54,6 +55,8 @@ namespace ERP_System
                 // Application.Run(new MainForm());
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
+                UserName = txtusername.Text;
+                Department = "HR";
                 return;
                 this.Hide();
             }
@@ -62,6 +65,8 @@ namespace ERP_System
                 dept = "IT";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
+                UserName = txtusername.Text;
+                Department = "IT";
                 return;
                 this.Close();
             }
@@ -70,6 +75,8 @@ namespace ERP_System
                 dept = "Finance";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
+                UserName = txtusername.Text;
+                Department = "Finance";
                 return;
                 this.Close();
             }
@@ -78,6 +85,8 @@ namespace ERP_System
                 dept = "Finance";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
+                UserName = txtusername.Text;
+                Department = "Finance";
                 return;
                 this.Close();
             }
