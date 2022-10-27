@@ -283,17 +283,18 @@ namespace TravelerDetailsManagementSystem
             MaintabControl.TabPages.Clear();
         }
 
-        //Outgoing Button
-        private void btnOutgoingDoc_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenForm((Button)sender);
+        }
+
+        private void btnViewDoc_Click(object sender, EventArgs e)
         {
             OpenForm((Button)sender);
         }
 
         #endregion
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            OpenForm((Button)sender);
-        }
+
     }
 }

@@ -86,7 +86,7 @@ namespace DataAccessLayer
         }
         #endregion
 
-        #region Finance
+        #region Finance Document save
         public int InsertFinanceDocument(FinanceDocClasses objFinanceDocClass)
         {
             int recID = 0;
@@ -120,15 +120,15 @@ namespace DataAccessLayer
 
         #endregion
 
-        #region Personal
+        #region Personal Document save
         public int InsertPersonalDocument(PersonalDocClasses objPersonalDocClass)
         {
             int recID = 0;
             using (TransactionScope scope = new TransactionScope())
             {
                 objExecute = new Execute();
-                string query = "INSERT INTO personaldocuments(file_Path, document_Name, about, added_Date, updated_Date) " +
-                    "VALUES(@file_Path, @document_Name, @about, @added_Date, @updated_Date); " +
+                string query = "INSERT INTO personaldocuments(file_Path, document_Name, about, hr_Check, it_Check, finance_Check, added_Date, updated_Date) " +
+                    "VALUES(@file_Path, @document_Name, @about, @hr_Check, @it_Check, @finance_Check, @added_Date, @updated_Date); " +
                     "SELECT LAST_INSERT_ID() AS recID";
 
                 param = new MySqlParameter[]
@@ -136,6 +136,9 @@ namespace DataAccessLayer
                         Execute.AddParameter("@file_Path",objPersonalDocClass.PersonalFilePath),
                         Execute.AddParameter("@document_Name",objPersonalDocClass.PersonalDocumentName),
                         Execute.AddParameter("@about",objPersonalDocClass.AboutPersonalDoc),
+                        Execute.AddParameter("@hr_Check",objPersonalDocClass.HrCheck),
+                        Execute.AddParameter("@it_Check",objPersonalDocClass.ItCheck),
+                        Execute.AddParameter("@finance_Check",objPersonalDocClass.FinanceCheck),
                         Execute.AddParameter("@added_Date",objPersonalDocClass.AddedDate),
                         Execute.AddParameter("@updated_Date",objPersonalDocClass.AddedDate),
                 };

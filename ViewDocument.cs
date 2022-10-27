@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TravelerDetailsManagementSystem.OutgoingDocuments
+namespace TravelerDetailsManagementSystem
 {
-    public partial class AddDocuments : Form
+    public partial class ViewDocument : Form
     {
-        public AddDocuments()
+        public ViewDocument()
         {
             InitializeComponent();
         }

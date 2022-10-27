@@ -14,7 +14,7 @@ namespace BusinessLogicLayer
         private OutgoingDA ObjoutgoingDA;
 
 
-        #region Save HR Documents
+        #region Save HR/ IT/ Finance/ Personal Documents
         //Save HR Documents
         public int InsertHrDocument(HrDocClass objhrDocClass)
         {

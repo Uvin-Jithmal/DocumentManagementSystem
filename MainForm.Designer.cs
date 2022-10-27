@@ -54,8 +54,8 @@ namespace TravelerDetailsManagementSystem
             this.treeViewReport = new System.Windows.Forms.TreeView();
             this.btnReport = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnOutgoingDoc = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnViewDoc = new System.Windows.Forms.Button();
             this.MaintabControl = new System.Windows.Forms.TabControl();
             this.tabFrontScreen = new System.Windows.Forms.TabPage();
             this.LeftMainflowLayoutPanel1.SuspendLayout();
@@ -72,8 +72,8 @@ namespace TravelerDetailsManagementSystem
             this.LeftMainflowLayoutPanel1.Controls.Add(this.btnMeals);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.Reportpanel);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.button2);
-            this.LeftMainflowLayoutPanel1.Controls.Add(this.btnOutgoingDoc);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.button3);
+            this.LeftMainflowLayoutPanel1.Controls.Add(this.btnViewDoc);
             this.LeftMainflowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMainflowLayoutPanel1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftMainflowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -116,7 +116,7 @@ namespace TravelerDetailsManagementSystem
             this.btnTraveler.Size = new System.Drawing.Size(267, 59);
             this.btnTraveler.TabIndex = 0;
             this.btnTraveler.Tag = "Traveler";
-            this.btnTraveler.Text = "Traveler Details";
+            this.btnTraveler.Text = "Test btn 1";
             this.btnTraveler.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTraveler.UseVisualStyleBackColor = false;
             this.btnTraveler.Click += new System.EventHandler(this.btnTraveler_Click);
@@ -135,7 +135,7 @@ namespace TravelerDetailsManagementSystem
             this.btnMeals.Size = new System.Drawing.Size(267, 59);
             this.btnMeals.TabIndex = 1;
             this.btnMeals.Tag = "Meal";
-            this.btnMeals.Text = "Meals";
+            this.btnMeals.Text = "Test btn 2";
             this.btnMeals.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMeals.UseVisualStyleBackColor = false;
             this.btnMeals.Click += new System.EventHandler(this.btnMeals_Click);
@@ -222,26 +222,6 @@ namespace TravelerDetailsManagementSystem
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnOutgoingDoc
-            // 
-            this.btnOutgoingDoc.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnOutgoingDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOutgoingDoc.FlatAppearance.BorderSize = 0;
-            this.btnOutgoingDoc.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOutgoingDoc.ForeColor = System.Drawing.Color.White;
-            this.btnOutgoingDoc.Image = ((System.Drawing.Image)(resources.GetObject("btnOutgoingDoc.Image")));
-            this.btnOutgoingDoc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOutgoingDoc.Location = new System.Drawing.Point(3, 319);
-            this.btnOutgoingDoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOutgoingDoc.Name = "btnOutgoingDoc";
-            this.btnOutgoingDoc.Size = new System.Drawing.Size(267, 59);
-            this.btnOutgoingDoc.TabIndex = 5;
-            this.btnOutgoingDoc.Tag = "AddDocuments";
-            this.btnOutgoingDoc.Text = "Outgoing Documents";
-            this.btnOutgoingDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOutgoingDoc.UseVisualStyleBackColor = false;
-            this.btnOutgoingDoc.Click += new System.EventHandler(this.btnOutgoingDoc_Click);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.SteelBlue;
@@ -251,7 +231,7 @@ namespace TravelerDetailsManagementSystem
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(3, 382);
+            this.button3.Location = new System.Drawing.Point(3, 319);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(267, 59);
@@ -261,6 +241,26 @@ namespace TravelerDetailsManagementSystem
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnViewDoc
+            // 
+            this.btnViewDoc.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnViewDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnViewDoc.FlatAppearance.BorderSize = 0;
+            this.btnViewDoc.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewDoc.ForeColor = System.Drawing.Color.White;
+            this.btnViewDoc.Image = ((System.Drawing.Image)(resources.GetObject("btnViewDoc.Image")));
+            this.btnViewDoc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnViewDoc.Location = new System.Drawing.Point(3, 382);
+            this.btnViewDoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewDoc.Name = "btnViewDoc";
+            this.btnViewDoc.Size = new System.Drawing.Size(267, 59);
+            this.btnViewDoc.TabIndex = 8;
+            this.btnViewDoc.Tag = "ViewDocument";
+            this.btnViewDoc.Text = "View Documents";
+            this.btnViewDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewDoc.UseVisualStyleBackColor = false;
+            this.btnViewDoc.Click += new System.EventHandler(this.btnViewDoc_Click);
             // 
             // MaintabControl
             // 
@@ -320,8 +320,8 @@ namespace TravelerDetailsManagementSystem
         private System.Windows.Forms.TabPage tabFrontScreen;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnOutgoingDoc;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnViewDoc;
     }
 }
 
