@@ -73,5 +73,33 @@ namespace BusinessLogicLayer
 
         #endregion
 
+        #region Delete HR/ IT/ Finance/ Personal Documents
+
+        //Retrieve HR Documents
+        public bool DeleteHRdocuments(int ID)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.DeleteHRdocuments(ID);
+        }
+        public bool DeleteITdocuments(int ID)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.DeleteITdocuments(ID);
+        }
+        public bool DeletePersonaldocuments(int ID)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.DeletePersonaldocuments(ID);
+        }
+        public bool DeleteFinancedocuments(int ID)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.DeleteFinancedocuments(ID);
+        }
+
+
+
+        #endregion
+
     }
 }

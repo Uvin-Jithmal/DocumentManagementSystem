@@ -31,22 +31,22 @@ namespace TravelerDetailsManagementSystem
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Town Report");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Purpose Report");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Food Report");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Monthly Reports");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Yearly Reports");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("No of Nights Report");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
-            treeNode28,
-            treeNode29,
-            treeNode30,
-            treeNode31,
-            treeNode32,
-            treeNode33,
-            treeNode34});
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Other Reports");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Town Report");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Purpose Report");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Food Report");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Monthly Reports");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Yearly Reports");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("No of Nights Report");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Vehicle Type Report");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Main Reports", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Other Reports");
             this.LeftMainflowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTraveler = new System.Windows.Forms.Button();
@@ -59,11 +59,11 @@ namespace TravelerDetailsManagementSystem
             this.btnViewDoc = new System.Windows.Forms.Button();
             this.MaintabControl = new System.Windows.Forms.TabControl();
             this.tabFrontScreen = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.LeftMainflowLayoutPanel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.MaintabControl.SuspendLayout();
@@ -167,27 +167,27 @@ namespace TravelerDetailsManagementSystem
             this.treeViewReport.Location = new System.Drawing.Point(0, 59);
             this.treeViewReport.Margin = new System.Windows.Forms.Padding(4);
             this.treeViewReport.Name = "treeViewReport";
-            treeNode28.Name = "Node7";
-            treeNode28.Text = "Town Report";
-            treeNode29.Name = "Node8";
-            treeNode29.Text = "Purpose Report";
-            treeNode30.Name = "Node9";
-            treeNode30.Text = "Food Report";
-            treeNode31.Name = "Node10";
-            treeNode31.Text = "Monthly Reports";
-            treeNode32.Name = "Node11";
-            treeNode32.Text = "Yearly Reports";
-            treeNode33.Name = "Node12";
-            treeNode33.Text = "No of Nights Report";
-            treeNode34.Name = "Node13";
-            treeNode34.Text = "Vehicle Type Report";
-            treeNode35.Name = "Node0";
-            treeNode35.Text = "Main Reports";
-            treeNode36.Name = "Node14";
-            treeNode36.Text = "Other Reports";
+            treeNode1.Name = "Node7";
+            treeNode1.Text = "Town Report";
+            treeNode2.Name = "Node8";
+            treeNode2.Text = "Purpose Report";
+            treeNode3.Name = "Node9";
+            treeNode3.Text = "Food Report";
+            treeNode4.Name = "Node10";
+            treeNode4.Text = "Monthly Reports";
+            treeNode5.Name = "Node11";
+            treeNode5.Text = "Yearly Reports";
+            treeNode6.Name = "Node12";
+            treeNode6.Text = "No of Nights Report";
+            treeNode7.Name = "Node13";
+            treeNode7.Text = "Vehicle Type Report";
+            treeNode8.Name = "Node0";
+            treeNode8.Text = "Main Reports";
+            treeNode9.Name = "Node14";
+            treeNode9.Text = "Other Reports";
             this.treeViewReport.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode36});
+            treeNode8,
+            treeNode9});
             this.treeViewReport.Size = new System.Drawing.Size(267, 0);
             this.treeViewReport.TabIndex = 3;
             // 
@@ -299,6 +299,15 @@ namespace TravelerDetailsManagementSystem
             this.tabFrontScreen.TabIndex = 0;
             this.tabFrontScreen.Text = "Front Screen";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(230, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 19);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "label4";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -317,10 +326,6 @@ namespace TravelerDetailsManagementSystem
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -330,14 +335,9 @@ namespace TravelerDetailsManagementSystem
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
-            // label4
+            // timer1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(230, 291);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainForm
             // 

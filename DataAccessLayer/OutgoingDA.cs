@@ -336,7 +336,84 @@ namespace DataAccessLayer
             }
 
             return lstPersonalDocuments;
-        } 
+        }
+        #endregion
+
+
+        #region Delete HR Documents
+
+        public bool DeleteHRdocuments(int ID)
+        {
+            bool res = false;
+            objExecute = new Execute();
+            string query = "DELETE FROM hrdocuments WHERE doc_ID = @ID";
+
+            param = new MySqlParameter[]
+            {
+                Execute.AddParameter("@ID",ID)
+            };
+            objExecute.ExecutesWithTransactionScope(query, param, CommandType.Text);
+            res = true;
+            return res;
+        }
+
+        #endregion
+
+        #region Delete IT Documents
+
+        public bool DeleteITdocuments(int ID)
+        {
+            bool res = false;
+            objExecute = new Execute();
+            string query = "DELETE FROM itdocuments WHERE doc_ID = @ID";
+
+            param = new MySqlParameter[]
+            {
+                Execute.AddParameter("@ID",ID)
+            };
+            objExecute.ExecutesWithTransactionScope(query, param, CommandType.Text);
+            res = true;
+            return res;
+        }
+
+        #endregion
+
+        #region Delete Personal Documents
+
+        public bool DeletePersonaldocuments(int ID)
+        {
+            bool res = false;
+            objExecute = new Execute();
+            string query = "DELETE FROM personaldocuments WHERE doc_ID = @ID";
+
+            param = new MySqlParameter[]
+            {
+                Execute.AddParameter("@ID",ID)
+            };
+            objExecute.ExecutesWithTransactionScope(query, param, CommandType.Text);
+            res = true;
+            return res;
+        }
+
+        #endregion
+
+        #region Delete Finance Documents
+
+        public bool DeleteFinancedocuments(int ID)
+        {
+            bool res = false;
+            objExecute = new Execute();
+            string query = "DELETE FROM financedocuments WHERE doc_ID = @ID";
+
+            param = new MySqlParameter[]
+            {
+                Execute.AddParameter("@ID",ID)
+            };
+            objExecute.ExecutesWithTransactionScope(query, param, CommandType.Text);
+            res = true;
+            return res;
+        }
+
         #endregion
 
     }

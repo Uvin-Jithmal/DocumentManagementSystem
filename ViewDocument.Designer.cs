@@ -31,28 +31,36 @@
             this.tabcontrolViewDocuments = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dgvHRdocuments = new System.Windows.Forms.DataGridView();
-            this.clm_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clm_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmDownload = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.clmDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvITdocuments = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvFIdocuments = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn4 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgvPersondocuments = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFiOpen = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmFiDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmFinanceDocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmFinanceDocPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn5 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewButtonColumn6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmPersonalOpen = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmPersonalDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmPersonalDocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmPersonalDocPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmItOpen = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmItDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmItDocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmItDocPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmHrDocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clm_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clm_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmHrDocPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmHrOpen = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmHrDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabcontrolViewDocuments.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHRdocuments)).BeginInit();
@@ -94,46 +102,19 @@
             this.dgvHRdocuments.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvHRdocuments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHRdocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmHrDocID,
             this.clm_Name,
             this.clm_Description,
-            this.clmDownload,
-            this.clmDelete});
+            this.clmHrDocPath,
+            this.clmHrOpen,
+            this.clmHrDelete});
             this.dgvHRdocuments.Location = new System.Drawing.Point(61, 44);
             this.dgvHRdocuments.Name = "dgvHRdocuments";
             this.dgvHRdocuments.RowHeadersWidth = 51;
             this.dgvHRdocuments.RowTemplate.Height = 24;
             this.dgvHRdocuments.Size = new System.Drawing.Size(1321, 452);
             this.dgvHRdocuments.TabIndex = 0;
-            // 
-            // clm_Name
-            // 
-            this.clm_Name.DataPropertyName = "HrDocumentName";
-            this.clm_Name.HeaderText = "Document Name";
-            this.clm_Name.MinimumWidth = 6;
-            this.clm_Name.Name = "clm_Name";
-            this.clm_Name.Width = 350;
-            // 
-            // clm_Description
-            // 
-            this.clm_Description.DataPropertyName = "AboutHrDoc";
-            this.clm_Description.HeaderText = "Document Description";
-            this.clm_Description.MinimumWidth = 6;
-            this.clm_Description.Name = "clm_Description";
-            this.clm_Description.Width = 550;
-            // 
-            // clmDownload
-            // 
-            this.clmDownload.HeaderText = "Download";
-            this.clmDownload.MinimumWidth = 6;
-            this.clmDownload.Name = "clmDownload";
-            this.clmDownload.Width = 125;
-            // 
-            // clmDelete
-            // 
-            this.clmDelete.HeaderText = "Delete";
-            this.clmDelete.MinimumWidth = 6;
-            this.clmDelete.Name = "clmDelete";
-            this.clmDelete.Width = 75;
+            this.dgvHRdocuments.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHRdocuments_CellDoubleClick);
             // 
             // tabPage2
             // 
@@ -153,44 +134,17 @@
             this.dgvITdocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewButtonColumn1,
-            this.dataGridViewButtonColumn2});
+            this.clmItOpen,
+            this.clmItDelete,
+            this.clmItDocID,
+            this.clmItDocPath});
             this.dgvITdocuments.Location = new System.Drawing.Point(61, 44);
             this.dgvITdocuments.Name = "dgvITdocuments";
             this.dgvITdocuments.RowHeadersWidth = 51;
             this.dgvITdocuments.RowTemplate.Height = 24;
             this.dgvITdocuments.Size = new System.Drawing.Size(1321, 452);
             this.dgvITdocuments.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ItDocumentName";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Document Name";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 350;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "AboutItDoc";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Document Description";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 550;
-            // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.HeaderText = "Download";
-            this.dataGridViewButtonColumn1.MinimumWidth = 6;
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.Width = 125;
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            this.dataGridViewButtonColumn2.HeaderText = "Delete";
-            this.dataGridViewButtonColumn2.MinimumWidth = 6;
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.Width = 75;
+            this.dgvITdocuments.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvITdocuments_CellMouseDoubleClick);
             // 
             // tabPage3
             // 
@@ -210,44 +164,17 @@
             this.dgvFIdocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewButtonColumn3,
-            this.dataGridViewButtonColumn4});
+            this.clmFiOpen,
+            this.clmFiDelete,
+            this.clmFinanceDocID,
+            this.clmFinanceDocPath});
             this.dgvFIdocuments.Location = new System.Drawing.Point(61, 44);
             this.dgvFIdocuments.Name = "dgvFIdocuments";
             this.dgvFIdocuments.RowHeadersWidth = 51;
             this.dgvFIdocuments.RowTemplate.Height = 24;
             this.dgvFIdocuments.Size = new System.Drawing.Size(1321, 452);
             this.dgvFIdocuments.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FinanceDocumentName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Document Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 350;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "AboutFinanceDoc";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Document Description";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 550;
-            // 
-            // dataGridViewButtonColumn3
-            // 
-            this.dataGridViewButtonColumn3.HeaderText = "Download";
-            this.dataGridViewButtonColumn3.MinimumWidth = 6;
-            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
-            this.dataGridViewButtonColumn3.Width = 125;
-            // 
-            // dataGridViewButtonColumn4
-            // 
-            this.dataGridViewButtonColumn4.HeaderText = "Delete";
-            this.dataGridViewButtonColumn4.MinimumWidth = 6;
-            this.dataGridViewButtonColumn4.Name = "dataGridViewButtonColumn4";
-            this.dataGridViewButtonColumn4.Width = 75;
+            this.dgvFIdocuments.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFIdocuments_CellMouseDoubleClick);
             // 
             // tabPage4
             // 
@@ -267,14 +194,65 @@
             this.dgvPersondocuments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
-            this.dataGridViewButtonColumn5,
-            this.dataGridViewButtonColumn6});
+            this.clmPersonalOpen,
+            this.clmPersonalDelete,
+            this.clmPersonalDocID,
+            this.clmPersonalDocPath});
             this.dgvPersondocuments.Location = new System.Drawing.Point(61, 44);
             this.dgvPersondocuments.Name = "dgvPersondocuments";
             this.dgvPersondocuments.RowHeadersWidth = 51;
             this.dgvPersondocuments.RowTemplate.Height = 24;
             this.dgvPersondocuments.Size = new System.Drawing.Size(1321, 452);
             this.dgvPersondocuments.TabIndex = 1;
+            this.dgvPersondocuments.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPersondocuments_CellMouseDoubleClick);
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "FinanceDocumentName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Document Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 350;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "AboutFinanceDoc";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Document Description";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 550;
+            // 
+            // clmFiOpen
+            // 
+            this.clmFiOpen.HeaderText = "Open";
+            this.clmFiOpen.MinimumWidth = 6;
+            this.clmFiOpen.Name = "clmFiOpen";
+            this.clmFiOpen.Width = 125;
+            // 
+            // clmFiDelete
+            // 
+            this.clmFiDelete.HeaderText = "Delete";
+            this.clmFiDelete.MinimumWidth = 6;
+            this.clmFiDelete.Name = "clmFiDelete";
+            this.clmFiDelete.Width = 75;
+            // 
+            // clmFinanceDocID
+            // 
+            this.clmFinanceDocID.DataPropertyName = "FinanceDocID";
+            this.clmFinanceDocID.HeaderText = "FinanceDocID";
+            this.clmFinanceDocID.MinimumWidth = 6;
+            this.clmFinanceDocID.Name = "clmFinanceDocID";
+            this.clmFinanceDocID.Visible = false;
+            this.clmFinanceDocID.Width = 125;
+            // 
+            // clmFinanceDocPath
+            // 
+            this.clmFinanceDocPath.DataPropertyName = "FinanceFilePath";
+            this.clmFinanceDocPath.HeaderText = "FinanceDocPath";
+            this.clmFinanceDocPath.MinimumWidth = 6;
+            this.clmFinanceDocPath.Name = "clmFinanceDocPath";
+            this.clmFinanceDocPath.Visible = false;
+            this.clmFinanceDocPath.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -292,19 +270,133 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 550;
             // 
-            // dataGridViewButtonColumn5
+            // clmPersonalOpen
             // 
-            this.dataGridViewButtonColumn5.HeaderText = "Download";
-            this.dataGridViewButtonColumn5.MinimumWidth = 6;
-            this.dataGridViewButtonColumn5.Name = "dataGridViewButtonColumn5";
-            this.dataGridViewButtonColumn5.Width = 125;
+            this.clmPersonalOpen.HeaderText = "Open";
+            this.clmPersonalOpen.MinimumWidth = 6;
+            this.clmPersonalOpen.Name = "clmPersonalOpen";
+            this.clmPersonalOpen.Width = 125;
             // 
-            // dataGridViewButtonColumn6
+            // clmPersonalDelete
             // 
-            this.dataGridViewButtonColumn6.HeaderText = "Delete";
-            this.dataGridViewButtonColumn6.MinimumWidth = 6;
-            this.dataGridViewButtonColumn6.Name = "dataGridViewButtonColumn6";
-            this.dataGridViewButtonColumn6.Width = 75;
+            this.clmPersonalDelete.HeaderText = "Delete";
+            this.clmPersonalDelete.MinimumWidth = 6;
+            this.clmPersonalDelete.Name = "clmPersonalDelete";
+            this.clmPersonalDelete.Width = 75;
+            // 
+            // clmPersonalDocID
+            // 
+            this.clmPersonalDocID.DataPropertyName = "PersonalDocID";
+            this.clmPersonalDocID.HeaderText = "PersonalDocID";
+            this.clmPersonalDocID.MinimumWidth = 6;
+            this.clmPersonalDocID.Name = "clmPersonalDocID";
+            this.clmPersonalDocID.Visible = false;
+            this.clmPersonalDocID.Width = 125;
+            // 
+            // clmPersonalDocPath
+            // 
+            this.clmPersonalDocPath.DataPropertyName = "PersonalFilePath";
+            this.clmPersonalDocPath.HeaderText = "PersonalDocPath";
+            this.clmPersonalDocPath.MinimumWidth = 6;
+            this.clmPersonalDocPath.Name = "clmPersonalDocPath";
+            this.clmPersonalDocPath.Visible = false;
+            this.clmPersonalDocPath.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ItDocumentName";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Document Name";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 350;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "AboutItDoc";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Document Description";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 550;
+            // 
+            // clmItOpen
+            // 
+            this.clmItOpen.HeaderText = "Open";
+            this.clmItOpen.MinimumWidth = 6;
+            this.clmItOpen.Name = "clmItOpen";
+            this.clmItOpen.Width = 125;
+            // 
+            // clmItDelete
+            // 
+            this.clmItDelete.HeaderText = "Delete";
+            this.clmItDelete.MinimumWidth = 6;
+            this.clmItDelete.Name = "clmItDelete";
+            this.clmItDelete.Width = 75;
+            // 
+            // clmItDocID
+            // 
+            this.clmItDocID.DataPropertyName = "ITDocID";
+            this.clmItDocID.HeaderText = "ItDocID";
+            this.clmItDocID.MinimumWidth = 6;
+            this.clmItDocID.Name = "clmItDocID";
+            this.clmItDocID.Visible = false;
+            this.clmItDocID.Width = 125;
+            // 
+            // clmItDocPath
+            // 
+            this.clmItDocPath.DataPropertyName = "ItFilePath";
+            this.clmItDocPath.HeaderText = "ITDocPath";
+            this.clmItDocPath.MinimumWidth = 6;
+            this.clmItDocPath.Name = "clmItDocPath";
+            this.clmItDocPath.Visible = false;
+            this.clmItDocPath.Width = 125;
+            // 
+            // clmHrDocID
+            // 
+            this.clmHrDocID.DataPropertyName = "HRDocID";
+            this.clmHrDocID.HeaderText = "DocID";
+            this.clmHrDocID.MinimumWidth = 6;
+            this.clmHrDocID.Name = "clmHrDocID";
+            this.clmHrDocID.Visible = false;
+            this.clmHrDocID.Width = 125;
+            // 
+            // clm_Name
+            // 
+            this.clm_Name.DataPropertyName = "HrDocumentName";
+            this.clm_Name.HeaderText = "Document Name";
+            this.clm_Name.MinimumWidth = 6;
+            this.clm_Name.Name = "clm_Name";
+            this.clm_Name.Width = 350;
+            // 
+            // clm_Description
+            // 
+            this.clm_Description.DataPropertyName = "AboutHrDoc";
+            this.clm_Description.HeaderText = "Document Description";
+            this.clm_Description.MinimumWidth = 6;
+            this.clm_Description.Name = "clm_Description";
+            this.clm_Description.Width = 550;
+            // 
+            // clmHrDocPath
+            // 
+            this.clmHrDocPath.DataPropertyName = "HrFilePath";
+            this.clmHrDocPath.HeaderText = "Path";
+            this.clmHrDocPath.MinimumWidth = 6;
+            this.clmHrDocPath.Name = "clmHrDocPath";
+            this.clmHrDocPath.Visible = false;
+            this.clmHrDocPath.Width = 125;
+            // 
+            // clmHrOpen
+            // 
+            this.clmHrOpen.HeaderText = "Open";
+            this.clmHrOpen.MinimumWidth = 6;
+            this.clmHrOpen.Name = "clmHrOpen";
+            this.clmHrOpen.Width = 125;
+            // 
+            // clmHrDelete
+            // 
+            this.clmHrDelete.HeaderText = "Delete";
+            this.clmHrDelete.MinimumWidth = 6;
+            this.clmHrDelete.Name = "clmHrDelete";
+            this.clmHrDelete.Width = 75;
             // 
             // ViewDocument
             // 
@@ -340,21 +432,29 @@
         private System.Windows.Forms.DataGridView dgvITdocuments;
         private System.Windows.Forms.DataGridView dgvFIdocuments;
         private System.Windows.Forms.DataGridView dgvPersondocuments;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmHrDocID;
         private System.Windows.Forms.DataGridViewTextBoxColumn clm_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn clm_Description;
-        private System.Windows.Forms.DataGridViewButtonColumn clmDownload;
-        private System.Windows.Forms.DataGridViewButtonColumn clmDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmHrDocPath;
+        private System.Windows.Forms.DataGridViewButtonColumn clmHrOpen;
+        private System.Windows.Forms.DataGridViewButtonColumn clmHrDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private System.Windows.Forms.DataGridViewButtonColumn clmItOpen;
+        private System.Windows.Forms.DataGridViewButtonColumn clmItDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmItDocID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmItDocPath;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn3;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn4;
+        private System.Windows.Forms.DataGridViewButtonColumn clmFiOpen;
+        private System.Windows.Forms.DataGridViewButtonColumn clmFiDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmFinanceDocID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmFinanceDocPath;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn5;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn6;
+        private System.Windows.Forms.DataGridViewButtonColumn clmPersonalOpen;
+        private System.Windows.Forms.DataGridViewButtonColumn clmPersonalDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmPersonalDocID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmPersonalDocPath;
     }
 }
