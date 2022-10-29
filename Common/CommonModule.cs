@@ -16,8 +16,8 @@ namespace TravelerDetailsManagementSystem.Common
     public static class CommonModule
     {
         #region Private Variables
-        public static string strSystemName = "ERP Application";
-        public static string strSystemCode = "ERP";
+        public static string strSystemName = "RBS Document Management System";
+        public static string strSystemCode = "RBS";
         public static int LocId = 9;
         //public static CommonManager commonManager;
         //private static List<ControllerProperties> UCControllers = new List<ControllerProperties>();
