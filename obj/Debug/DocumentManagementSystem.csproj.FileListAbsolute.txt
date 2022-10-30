@@ -148,10 +148,8 @@ D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\Traveler
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.Common.frmReportViewer.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\ERP_System.LoginForm.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.MainForm.resources
-D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.MealMasterfile.Meal.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.Properties.Resources.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.SplashScreen.resources
-D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.TravelerForms.Traveler.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\DocumentManagementSystem.csproj.GenerateResource.cache
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\DocumentManagementSystem.csproj.CoreCompileInputs.cache
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\DocumentManagementSystem.csproj.CopyComplete

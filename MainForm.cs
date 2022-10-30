@@ -10,8 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TravelerDetailsManagementSystem.MealMasterfile;
-using TravelerDetailsManagementSystem.TravelerForms;
+
 
 namespace TravelerDetailsManagementSystem
 {
@@ -249,24 +248,6 @@ namespace TravelerDetailsManagementSystem
 
         #region Button Click Events
 
-        //Traveller Button
-        private void btnTraveler_Click(object sender, EventArgs e)
-        {
-            //Traveler frmTravel = new Traveler();
-            //frmTravel.Show();
-
-            OpenForm((Button) sender);
-        }
-
-        //Meals Button
-        private void btnMeals_Click(object sender, EventArgs e)
-        {
-            //Meal frmMeal = new Meal();
-            //frmMeal.Show();
-
-            OpenForm((Button)sender);
-        }
-
         //Reports Button
         private void btnReport_Click(object sender, EventArgs e)
         {
@@ -285,17 +266,23 @@ namespace TravelerDetailsManagementSystem
             MaintabControl.TabPages.Clear();
         }
 
+        //AddDocument Button
         private void button3_Click(object sender, EventArgs e)
         {
             OpenForm((Button)sender);
         }
 
+        //View Documents button
         private void btnViewDoc_Click(object sender, EventArgs e)
         {
             OpenForm((Button)sender);
         }
 
-
+        //Delete Documents
+        private void btnAddDocument_Click(object sender, EventArgs e)
+        {
+            OpenForm((Button)sender);
+        }
         #endregion
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -304,8 +291,8 @@ namespace TravelerDetailsManagementSystem
             label2.Text = DateTime.Now.ToLongTimeString();
             label3.Text = LoginForm.UserName;
             label4.Text = LoginForm.Department;
-            label3.Visible = true;
-            label4.Visible = true;
+            //label3.Visible = true;
+            //label4.Visible = true;
         }
     }
 }

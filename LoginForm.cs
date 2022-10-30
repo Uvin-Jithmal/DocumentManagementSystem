@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TravelerDetailsManagementSystem;
+using TravelerDetailsManagementSystem.Common;
 
 namespace ERP_System
 {
@@ -26,10 +27,11 @@ namespace ERP_System
             InitializeComponent();
         }
 
-        public LoginForm(Form MainForm, int systemID)
+        public LoginForm(Form MainForm, int systemID, Form ViewDocument)
         {
             InitializeComponent();
             mf = MainForm;
+
             txtusername.Select();
             txtusername.Focus();
         }
@@ -55,8 +57,8 @@ namespace ERP_System
                 // Application.Run(new MainForm());
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
-                UserName = txtusername.Text;
-                Department = "HR";
+                UserName = "Kalindu Laksahan";
+                Department = "HR Department";
                 return;
                 this.Hide();
             }
@@ -65,52 +67,38 @@ namespace ERP_System
                 dept = "IT";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
-                UserName = txtusername.Text;
-                Department = "IT";
+                UserName = "Uvin Jithmal";
+                Department = "IT Department";
                 return;
-                this.Close();
+                this.Hide();
             }
             if (txtusername.Text == "ishini" && txtpassword.Text == "1234")
             {
                 dept = "Finance";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
-                UserName = txtusername.Text;
-                Department = "Finance";
+                UserName = "Ishini Halgaswatta";
+                Department = "Finance Department";
                 return;
-                this.Close();
+                this.Hide();
             }
             if (txtusername.Text == "shalini" && txtpassword.Text == "1234")
             {
                 dept = "Finance";
                 MessageBox.Show("Login Completed ! Welcome " + txtusername.Text);
                 mf.Show();
-                UserName = txtusername.Text;
-                Department = "Finance";
+                UserName = "Shalani Wijesekara";
+                Department = "Finance Department";
                 return;
-                this.Close();
+                this.Hide();
             }
             else
                 MessageBox.Show("Invalid Username or Password !");
             txtusername.Refresh();
             txtpassword.Refresh();
+            CommonModule.ClearControlsOftheForm(this);
+            this.Hide();
         }
 
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-
-            ///////////
-
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
