@@ -94,10 +94,8 @@ C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\DocumentManagement
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.Common.frmCommonSearch.resources
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.Common.frmReportViewer.resources
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.MainForm.resources
-C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.MealMasterfile.Meal.resources
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.Properties.Resources.resources
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.SplashScreen.resources
-C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.TravelerForms.Traveler.resources
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\DocumentManagementSystem.csproj.GenerateResource.cache
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\DocumentManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Source\Repos\DocumentManagementSystem\obj\Debug\DocumentManagementSystem.csproj.CopyComplete
@@ -158,3 +156,4 @@ D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\Traveler
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.ViewDocument.resources
 C:\Users\ASUS\source\repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.ViewDocument.resources
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.AddUsers.resources
+C:\Users\ASUS\source\repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.AddUsers.resources

@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDocument));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.btnHrDocSave = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxDocName = new System.Windows.Forms.TextBox();
@@ -43,6 +46,9 @@
             this.btnAddHrDoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.btnITDocSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtITDocName = new System.Windows.Forms.TextBox();
@@ -55,6 +61,9 @@
             this.btnAddITDoc = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.btnFinanceDocSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFinanceDocName = new System.Windows.Forms.TextBox();
@@ -67,6 +76,9 @@
             this.btnAddFinanceDoc = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.btnPersonalDocSave = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtITPersonalName = new System.Windows.Forms.TextBox();
@@ -79,18 +91,6 @@
             this.btnAddPersonalDoc = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -111,6 +111,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1172, 342);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -135,6 +136,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "HR Documents";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(258, 38);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(20, 23);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "*";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(258, 133);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(20, 23);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "*";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(258, 89);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(20, 23);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "*";
             // 
             // btnHrDocSave
             // 
@@ -280,6 +315,39 @@
             this.tabPage2.Text = "IT Documents";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(258, 40);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 23);
+            this.label20.TabIndex = 25;
+            this.label20.Text = "*";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(258, 135);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(20, 23);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "*";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(258, 91);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 23);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "*";
+            // 
             // btnITDocSave
             // 
             this.btnITDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -423,6 +491,39 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Finance Documents";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(253, 42);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(20, 23);
+            this.label23.TabIndex = 25;
+            this.label23.Text = "*";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(253, 137);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(20, 23);
+            this.label24.TabIndex = 24;
+            this.label24.Text = "*";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(253, 93);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(20, 23);
+            this.label25.TabIndex = 23;
+            this.label25.Text = "*";
             // 
             // btnFinanceDocSave
             // 
@@ -568,6 +669,39 @@
             this.tabPage4.Text = "Personal Documents";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(253, 42);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(20, 23);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "*";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(253, 137);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(20, 23);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "*";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Location = new System.Drawing.Point(253, 93);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(20, 23);
+            this.label28.TabIndex = 23;
+            this.label28.Text = "*";
+            // 
             // btnPersonalDocSave
             // 
             this.btnPersonalDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -692,138 +826,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(258, 89);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 23);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "*";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(258, 133);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(20, 23);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "*";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(258, 38);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(20, 23);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "*";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(258, 40);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(20, 23);
-            this.label20.TabIndex = 25;
-            this.label20.Text = "*";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(258, 135);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(20, 23);
-            this.label21.TabIndex = 24;
-            this.label21.Text = "*";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(258, 91);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(20, 23);
-            this.label22.TabIndex = 23;
-            this.label22.Text = "*";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(253, 42);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(20, 23);
-            this.label23.TabIndex = 25;
-            this.label23.Text = "*";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(253, 137);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(20, 23);
-            this.label24.TabIndex = 24;
-            this.label24.Text = "*";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(253, 93);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(20, 23);
-            this.label25.TabIndex = 23;
-            this.label25.Text = "*";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(253, 42);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(20, 23);
-            this.label26.TabIndex = 25;
-            this.label26.Text = "*";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(253, 137);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(20, 23);
-            this.label27.TabIndex = 24;
-            this.label27.Text = "*";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Red;
-            this.label28.Location = new System.Drawing.Point(253, 93);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(20, 23);
-            this.label28.TabIndex = 23;
-            this.label28.Text = "*";
-            // 
             // AddDocument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -834,6 +836,7 @@
             this.Name = "AddDocument";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Documents";
+            this.Load += new System.EventHandler(this.AddDocument_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
