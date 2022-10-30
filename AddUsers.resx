@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="clmMealID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="clmMealName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="clmMealTypeID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="clmMealType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSaveUser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAH4SURBVGhD7ZnNL8NgHMf3d3DhbxgRGQnaibSVYC0LEjOLIOJlmYQTRyeMC0Fibl52E4uXxNVF
+        7ET4B5xIhEksmUcfe1ZrPZt27bqF3yf5Hn8vn7RJk/4cAAAAfwtGkHpYXoyyvHRWmohRvANZpzBYwbMr
+        N0JlEU6MkLWMwfCiN9PEFQgg5+yUKvNLYbS8tm5pcE/tHJd/KEvG003W049cKL9OaYmKs01Ucb6lyu3L
+        E7Ia3FM7p1JOg8+fFhGkQ7KefuTCC1zsnJv+0RzHLhGcmpmJzFO5IOvp51skSG1up0htaBJEQMQMIJIP
+        EDEBiOQDREwAIvn4TcRzdYR88VNLg3vSZhVVxM6ACAZEihAQwfw7kdZYBCVfEwXl4TKOoi39Sla9I9QZ
+        toi0HUfI58w4T/FbFKv3KtnsDFBnlETkI5VCj9c3quSirEWSLwnVcji5ABEjgAiIgEh+WE48wcVNUi+q
+        3luhDsDRiqTek+h+Y0+VXNgjIohNcuGbIrMfpg7RihhBr4ipn9gYhpPcikx3H6qiyFgpstPuT2j747NC
+        48Dgl4ibFw/IasbRymQOMLWhiee68dG7juHRa9rRRk8WFxZRkJWUjHE9b9lHHhyXn9xG5DCCJJK1CiNb
+        poTZJuuYg+G7muVmMfrBsnjBr5PpJwEAAFBmOByfa0RUfAxddW8AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

@@ -129,7 +129,6 @@ namespace TravelerDetailsManagementSystem
                 {
                     MessageBox.Show("Document " + textBoxDocName.Text + " Saved Successfully", "Successful");
                     CommonModule.ClearControlsOftheForm(this);
-                    //GetEmployees();
                 }
 
             }
@@ -181,7 +180,7 @@ namespace TravelerDetailsManagementSystem
                 {
                     MessageBox.Show("Document " + txtITDocName.Text + " Saved Successfully", "Successful");
                     CommonModule.ClearControlsOftheForm(this);
-                    //GetEmployees();
+
                 }
 
             }
@@ -231,7 +230,6 @@ namespace TravelerDetailsManagementSystem
                 {
                     MessageBox.Show("Document " + txtFinanceDocName.Text + " Saved Successfully", "Successful");
                     CommonModule.ClearControlsOftheForm(this);
-                    //GetEmployees();
                 }
 
             }
@@ -288,8 +286,7 @@ namespace TravelerDetailsManagementSystem
             {
                 CommonModule.ShowErrorMessage(ex);
             }
-        } 
+        }
         #endregion
-
     }
 }

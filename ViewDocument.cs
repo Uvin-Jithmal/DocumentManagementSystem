@@ -9,6 +9,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,10 +24,11 @@ namespace TravelerDetailsManagementSystem
         {
             InitializeComponent();
             dgvHRdocuments.AutoGenerateColumns = false;
-
         }
 
         #region Private Variables
+
+        string department;
 
         HrDocClass hrClass = new HrDocClass();
         ItDocClasses itClass = new ItDocClasses();
@@ -43,7 +45,6 @@ namespace TravelerDetailsManagementSystem
         List<PersonalDocClasses> lstPersonalDocuments;
 
         #endregion
-
 
         #region Private Methods
 
@@ -120,12 +121,48 @@ namespace TravelerDetailsManagementSystem
                 GetITdocumentDetails();
                 GetFinancedocumentDetails();
                 GetPersonaldocumentDetails();
+
+                //geting logged user details
+                label1.Text = LoginForm.UserName;
+                department = LoginForm.Department;
+                label2.Text = department;
+
+                //Validate user and Display only the relevent Department Documents
+                if(department == "IT Department")
+                {
+                    dgvHRdocuments.Visible = false;
+                    dgvFIdocuments.Visible = false;
+                    dgvPersondocuments.Visible = false;
+
+                    //Disable Double click visible
+                    label3.Visible = false;
+                    label5.Visible = false;
+                    label6.Visible = false;
+
+                    //enable reason to not displaying
+                    label7.Visible = true;
+                    label9.Visible = true;
+                    label10.Visible = true;
+
+                }
+                if(department == "Finance Department")
+                {
+                    dgvITdocuments.Visible = false;
+
+                    label4.Visible = false;
+
+                    label8.Visible = true;
+                }
+
+
+
             }
             catch (Exception ex)
             {
                 CommonModule.ShowErrorMessage(ex);
             }
         }
+
         #region Open & Delete HR Documents
         private void dgvHRdocuments_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -560,6 +597,7 @@ namespace TravelerDetailsManagementSystem
 
 
         }
+
 
 
         #endregion

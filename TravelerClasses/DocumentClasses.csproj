@@ -41,18 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer\TravelerClass.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="MealClasses\Meals.cs" />
     <Compile Include="OutgoingClasses\FinanceDocClasses.cs" />
     <Compile Include="OutgoingClasses\HrDocClass.cs" />
     <Compile Include="OutgoingClasses\ItDocClasses.cs" />
     <Compile Include="OutgoingClasses\PersonalDocClasses.cs" />
+    <Compile Include="OutgoingClasses\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LocationClasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

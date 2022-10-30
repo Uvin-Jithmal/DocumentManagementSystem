@@ -48,13 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDocumentDA.cs" />
     <Compile Include="Common\Execute.cs" />
     <Compile Include="Connection\SqlConn.cs" />
-    <Compile Include="MealDA.cs" />
     <Compile Include="OutgoingDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TravelerDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TravelerClasses\DocumentClasses.csproj">
