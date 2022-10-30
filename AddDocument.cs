@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer;
+using ERP_System;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TravelerClasses.OutgoingClasses;
 using TravelerDetailsManagementSystem.Common;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TravelerDetailsManagementSystem
 {
@@ -21,6 +23,7 @@ namespace TravelerDetailsManagementSystem
         string ITDocaPath;
         string FinanceDocaPath;
         string PersonalDocaPath;
+        string department;
 
         HrDocClass ObjhrDocClass = new HrDocClass();
         ItDocClasses ObjItDocClass = new ItDocClasses();
@@ -34,6 +37,8 @@ namespace TravelerDetailsManagementSystem
         public AddDocument()
         {
             InitializeComponent();
+            //geting logged user details
+            department = LoginForm.Department;
         }
 
         #region Get File Path of Document
@@ -288,5 +293,48 @@ namespace TravelerDetailsManagementSystem
             }
         }
         #endregion
+
+        public static void EnableTab(TabPage page, bool enable)
+        {
+            EnableControls(page.Controls, enable);
+        }
+        private static void EnableControls(Control.ControlCollection ctls, bool enable)
+        {
+            foreach (Control ctl in ctls)
+            {
+                ctl.Enabled = enable;
+                EnableControls(ctl.Controls, enable);
+            }
+        }
+
+        private void AddDocument_Load(object sender, EventArgs e)
+        {
+            if (department == "IT Department")
+            {
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 0], false);
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 2], false);
+            }
+            if (department == "Finance Department")
+            {
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 0], false);
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 1], false);
+            }
+            if (department == "HR Department")
+            {
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 1], false);
+                EnableTab(tabControl1.TabPages[tabControl1.SelectedIndex = 2], false);
+            }
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
