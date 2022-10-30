@@ -264,6 +264,7 @@ namespace TravelerDetailsManagementSystem
         private void button2_Click(object sender, EventArgs e)
         {
             MaintabControl.TabPages.Clear();
+            MaintabControl.TabPages.Add(tabFrontScreen);
         }
 
         //AddDocument Button
@@ -283,6 +284,12 @@ namespace TravelerDetailsManagementSystem
         {
             OpenForm((Button)sender);
         }
+
+        //Add User Details
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            OpenForm((Button)sender);
+        }
         #endregion
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -294,5 +301,6 @@ namespace TravelerDetailsManagementSystem
             //label3.Visible = true;
             //label4.Visible = true;
         }
+
     }
 }

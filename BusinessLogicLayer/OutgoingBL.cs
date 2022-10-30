@@ -40,7 +40,6 @@ namespace BusinessLogicLayer
 
         #endregion
 
-
         #region Retrieve HR/ IT/ Finance/ Personal Documents
 
         //Retrieve HR Documents
@@ -97,8 +96,16 @@ namespace BusinessLogicLayer
             return ObjoutgoingDA.DeleteFinancedocuments(ID);
         }
 
+        #endregion
 
 
+        #region Save Users
+
+        public int InsertDMSUsers(Users objUsers)
+        {
+            ObjoutgoingDA = new OutgoingDA();
+            return ObjoutgoingDA.InsertDMSUsers(objUsers);
+        } 
         #endregion
 
     }

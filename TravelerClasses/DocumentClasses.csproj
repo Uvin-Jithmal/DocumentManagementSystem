@@ -46,6 +46,7 @@
     <Compile Include="OutgoingClasses\HrDocClass.cs" />
     <Compile Include="OutgoingClasses\ItDocClasses.cs" />
     <Compile Include="OutgoingClasses\PersonalDocClasses.cs" />
+    <Compile Include="OutgoingClasses\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.cs" />
   </ItemGroup>

@@ -416,5 +416,36 @@ namespace DataAccessLayer
 
         #endregion
 
+
+        #region Save Users
+        public int InsertDMSUsers(Users objUsers)
+        {
+            int recID = 0;
+            using (TransactionScope scope = new TransactionScope())
+            {
+                objExecute = new Execute();
+                string query = "INSERT INTO users(userName, password, userDepartment, addedDate) " +
+                    "VALUES(@userName, @password, @userDepartment, @addedDate); " +
+                    "SELECT LAST_INSERT_ID() AS recID";
+
+                param = new MySqlParameter[]
+                {
+                        Execute.AddParameter("@userName",objUsers.UserName),
+                        Execute.AddParameter("@password",objUsers.Password),
+                        Execute.AddParameter("@userDepartment",objUsers.Department),
+                        Execute.AddParameter("@addedDate",objUsers.AddedDate),
+                };
+                DataRow dr = (DataRow)objExecute.Executes(query, ReturnType.DataRow, param, CommandType.Text);
+                scope.Complete();
+                if (dr != null)
+                {
+                    recID = Convert.ToInt32(dr["recID"]);
+                }
+            }
+            return recID;
+        }
+
+        #endregion
+
     }
 }

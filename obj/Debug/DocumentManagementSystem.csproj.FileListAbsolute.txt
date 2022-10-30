@@ -157,3 +157,4 @@ D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\Traveler
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.pdb
 D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.ViewDocument.resources
 C:\Users\ASUS\source\repos\DocumentManagementSystem\obj\Debug\TravelerDetailsManagementSystem.ViewDocument.resources
+D:\Projects\Visual Studio Projects\Document Management System\obj\Debug\TravelerDetailsManagementSystem.AddUsers.resources

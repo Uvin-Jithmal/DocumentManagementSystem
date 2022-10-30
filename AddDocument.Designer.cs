@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDocument));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnHrDocSave = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxDocName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.btnAddHrDoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnITDocSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtITDocName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +55,7 @@
             this.btnAddITDoc = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnFinanceDocSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFinanceDocName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,6 +67,7 @@
             this.btnAddFinanceDoc = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnPersonalDocSave = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtITPersonalName = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -75,10 +79,18 @@
             this.btnAddPersonalDoc = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnHrDocSave = new System.Windows.Forms.Button();
-            this.btnITDocSave = new System.Windows.Forms.Button();
-            this.btnFinanceDocSave = new System.Windows.Forms.Button();
-            this.btnPersonalDocSave = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,6 +114,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label19);
+            this.tabPage1.Controls.Add(this.label18);
+            this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.btnHrDocSave);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.textBoxDocName);
@@ -120,6 +135,22 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "HR Documents";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnHrDocSave
+            // 
+            this.btnHrDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHrDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHrDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnHrDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnHrDocSave.Image")));
+            this.btnHrDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHrDocSave.Location = new System.Drawing.Point(822, 96);
+            this.btnHrDocSave.Name = "btnHrDocSave";
+            this.btnHrDocSave.Size = new System.Drawing.Size(229, 58);
+            this.btnHrDocSave.TabIndex = 11;
+            this.btnHrDocSave.Text = "Save HR Document";
+            this.btnHrDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHrDocSave.UseVisualStyleBackColor = false;
+            this.btnHrDocSave.Click += new System.EventHandler(this.btnHrDocSave_Click);
             // 
             // label9
             // 
@@ -227,6 +258,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.btnITDocSave);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.txtITDocName);
@@ -245,6 +279,22 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "IT Documents";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnITDocSave
+            // 
+            this.btnITDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnITDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnITDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnITDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnITDocSave.Image")));
+            this.btnITDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnITDocSave.Location = new System.Drawing.Point(817, 98);
+            this.btnITDocSave.Name = "btnITDocSave";
+            this.btnITDocSave.Size = new System.Drawing.Size(229, 58);
+            this.btnITDocSave.TabIndex = 22;
+            this.btnITDocSave.Text = "Save IT Document";
+            this.btnITDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnITDocSave.UseVisualStyleBackColor = false;
+            this.btnITDocSave.Click += new System.EventHandler(this.btnITDocSave_Click);
             // 
             // label3
             // 
@@ -352,6 +402,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label23);
+            this.tabPage3.Controls.Add(this.label24);
+            this.tabPage3.Controls.Add(this.label25);
             this.tabPage3.Controls.Add(this.btnFinanceDocSave);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.txtFinanceDocName);
@@ -370,6 +423,22 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Finance Documents";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnFinanceDocSave
+            // 
+            this.btnFinanceDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnFinanceDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinanceDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnFinanceDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnFinanceDocSave.Image")));
+            this.btnFinanceDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFinanceDocSave.Location = new System.Drawing.Point(771, 98);
+            this.btnFinanceDocSave.Name = "btnFinanceDocSave";
+            this.btnFinanceDocSave.Size = new System.Drawing.Size(258, 58);
+            this.btnFinanceDocSave.TabIndex = 22;
+            this.btnFinanceDocSave.Text = "Save Financial Document";
+            this.btnFinanceDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanceDocSave.UseVisualStyleBackColor = false;
+            this.btnFinanceDocSave.Click += new System.EventHandler(this.btnFinanceDocSave_Click);
             // 
             // label5
             // 
@@ -477,6 +546,9 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label26);
+            this.tabPage4.Controls.Add(this.label27);
+            this.tabPage4.Controls.Add(this.label28);
             this.tabPage4.Controls.Add(this.btnPersonalDocSave);
             this.tabPage4.Controls.Add(this.label8);
             this.tabPage4.Controls.Add(this.txtITPersonalName);
@@ -495,6 +567,22 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Personal Documents";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnPersonalDocSave
+            // 
+            this.btnPersonalDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnPersonalDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPersonalDocSave.ForeColor = System.Drawing.Color.Black;
+            this.btnPersonalDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonalDocSave.Image")));
+            this.btnPersonalDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonalDocSave.Location = new System.Drawing.Point(783, 98);
+            this.btnPersonalDocSave.Name = "btnPersonalDocSave";
+            this.btnPersonalDocSave.Size = new System.Drawing.Size(263, 58);
+            this.btnPersonalDocSave.TabIndex = 22;
+            this.btnPersonalDocSave.Text = "Save Personal Document";
+            this.btnPersonalDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonalDocSave.UseVisualStyleBackColor = false;
+            this.btnPersonalDocSave.Click += new System.EventHandler(this.btnPersonalDocSave_Click);
             // 
             // label8
             // 
@@ -604,69 +692,137 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // btnHrDocSave
+            // label17
             // 
-            this.btnHrDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnHrDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHrDocSave.ForeColor = System.Drawing.Color.Black;
-            this.btnHrDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnHrDocSave.Image")));
-            this.btnHrDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHrDocSave.Location = new System.Drawing.Point(822, 96);
-            this.btnHrDocSave.Name = "btnHrDocSave";
-            this.btnHrDocSave.Size = new System.Drawing.Size(229, 58);
-            this.btnHrDocSave.TabIndex = 11;
-            this.btnHrDocSave.Text = "Save HR Document";
-            this.btnHrDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHrDocSave.UseVisualStyleBackColor = false;
-            this.btnHrDocSave.Click += new System.EventHandler(this.btnHrDocSave_Click);
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(258, 89);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(20, 23);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "*";
             // 
-            // btnITDocSave
+            // label18
             // 
-            this.btnITDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnITDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnITDocSave.ForeColor = System.Drawing.Color.Black;
-            this.btnITDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnITDocSave.Image")));
-            this.btnITDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnITDocSave.Location = new System.Drawing.Point(817, 98);
-            this.btnITDocSave.Name = "btnITDocSave";
-            this.btnITDocSave.Size = new System.Drawing.Size(229, 58);
-            this.btnITDocSave.TabIndex = 22;
-            this.btnITDocSave.Text = "Save IT Document";
-            this.btnITDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnITDocSave.UseVisualStyleBackColor = false;
-            this.btnITDocSave.Click += new System.EventHandler(this.btnITDocSave_Click);
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(258, 133);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(20, 23);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "*";
             // 
-            // btnFinanceDocSave
+            // label19
             // 
-            this.btnFinanceDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnFinanceDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinanceDocSave.ForeColor = System.Drawing.Color.Black;
-            this.btnFinanceDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnFinanceDocSave.Image")));
-            this.btnFinanceDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFinanceDocSave.Location = new System.Drawing.Point(771, 98);
-            this.btnFinanceDocSave.Name = "btnFinanceDocSave";
-            this.btnFinanceDocSave.Size = new System.Drawing.Size(258, 58);
-            this.btnFinanceDocSave.TabIndex = 22;
-            this.btnFinanceDocSave.Text = "Save Financial Document";
-            this.btnFinanceDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanceDocSave.UseVisualStyleBackColor = false;
-            this.btnFinanceDocSave.Click += new System.EventHandler(this.btnFinanceDocSave_Click);
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(258, 38);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(20, 23);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "*";
             // 
-            // btnPersonalDocSave
+            // label20
             // 
-            this.btnPersonalDocSave.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnPersonalDocSave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPersonalDocSave.ForeColor = System.Drawing.Color.Black;
-            this.btnPersonalDocSave.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonalDocSave.Image")));
-            this.btnPersonalDocSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonalDocSave.Location = new System.Drawing.Point(783, 98);
-            this.btnPersonalDocSave.Name = "btnPersonalDocSave";
-            this.btnPersonalDocSave.Size = new System.Drawing.Size(263, 58);
-            this.btnPersonalDocSave.TabIndex = 22;
-            this.btnPersonalDocSave.Text = "Save Personal Document";
-            this.btnPersonalDocSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonalDocSave.UseVisualStyleBackColor = false;
-            this.btnPersonalDocSave.Click += new System.EventHandler(this.btnPersonalDocSave_Click);
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(258, 40);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 23);
+            this.label20.TabIndex = 25;
+            this.label20.Text = "*";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(258, 135);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(20, 23);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "*";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(258, 91);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 23);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "*";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(253, 42);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(20, 23);
+            this.label23.TabIndex = 25;
+            this.label23.Text = "*";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(253, 137);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(20, 23);
+            this.label24.TabIndex = 24;
+            this.label24.Text = "*";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(253, 93);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(20, 23);
+            this.label25.TabIndex = 23;
+            this.label25.Text = "*";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(253, 42);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(20, 23);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "*";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(253, 137);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(20, 23);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "*";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Location = new System.Drawing.Point(253, 93);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(20, 23);
+            this.label28.TabIndex = 23;
+            this.label28.Text = "*";
             // 
             // AddDocument
             // 
@@ -743,5 +899,17 @@
         private System.Windows.Forms.CheckBox checkHRpersonal;
         private System.Windows.Forms.Button btnAddPersonalDoc;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
     }
 }

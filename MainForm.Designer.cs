@@ -56,22 +56,22 @@ namespace TravelerDetailsManagementSystem
             this.btnViewDoc = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddDocument = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAddUser = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panelLoggedData = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MaintabControl = new System.Windows.Forms.TabControl();
             this.tabFrontScreen = new System.Windows.Forms.TabPage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LeftMainflowLayoutPanel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.panelLoggedData.SuspendLayout();
-            this.MaintabControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.MaintabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // LeftMainflowLayoutPanel1
@@ -84,7 +84,7 @@ namespace TravelerDetailsManagementSystem
             this.LeftMainflowLayoutPanel1.Controls.Add(this.btnViewDoc);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.flowLayoutPanel1);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.btnAddDocument);
-            this.LeftMainflowLayoutPanel1.Controls.Add(this.button4);
+            this.LeftMainflowLayoutPanel1.Controls.Add(this.btnAddUser);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.button2);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.panelLoggedData);
             this.LeftMainflowLayoutPanel1.Controls.Add(this.pictureBox1);
@@ -246,24 +246,25 @@ namespace TravelerDetailsManagementSystem
             this.btnAddDocument.UseVisualStyleBackColor = false;
             this.btnAddDocument.Click += new System.EventHandler(this.btnAddDocument_Click);
             // 
-            // button4
+            // btnAddUser
             // 
-            this.button4.BackColor = System.Drawing.Color.SteelBlue;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(3, 327);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(312, 59);
-            this.button4.TabIndex = 12;
-            this.button4.Tag = "AddDocument";
-            this.button4.Text = "Add Users";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAddUser.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnAddUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddUser.FlatAppearance.BorderSize = 0;
+            this.btnAddUser.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddUser.ForeColor = System.Drawing.Color.White;
+            this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
+            this.btnAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddUser.Location = new System.Drawing.Point(3, 327);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(312, 59);
+            this.btnAddUser.TabIndex = 12;
+            this.btnAddUser.Tag = "AddUsers";
+            this.btnAddUser.Text = "Add Users";
+            this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddUser.UseVisualStyleBackColor = false;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // button2
             // 
@@ -335,6 +336,18 @@ namespace TravelerDetailsManagementSystem
             this.label3.TabIndex = 2;
             this.label3.Text = "Date";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::TravelerDetailsManagementSystem.Properties.Resources.MainImage;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 661);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(307, 214);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // MaintabControl
             // 
             this.MaintabControl.Controls.Add(this.tabFrontScreen);
@@ -352,7 +365,9 @@ namespace TravelerDetailsManagementSystem
             // tabFrontScreen
             // 
             this.tabFrontScreen.BackColor = System.Drawing.Color.Transparent;
+            this.tabFrontScreen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabFrontScreen.BackgroundImage")));
             this.tabFrontScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabFrontScreen.ForeColor = System.Drawing.Color.Black;
             this.tabFrontScreen.Location = new System.Drawing.Point(4, 28);
             this.tabFrontScreen.Margin = new System.Windows.Forms.Padding(4);
             this.tabFrontScreen.Name = "tabFrontScreen";
@@ -365,18 +380,6 @@ namespace TravelerDetailsManagementSystem
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::TravelerDetailsManagementSystem.Properties.Resources.MainImage;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 661);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 214);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -388,15 +391,15 @@ namespace TravelerDetailsManagementSystem
             this.Controls.Add(this.LeftMainflowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
-            this.Text = "Main Form";
+            this.Text = "Rapidventure Business Solutions - Document Management System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.LeftMainflowLayoutPanel1.ResumeLayout(false);
             this.Reportpanel.ResumeLayout(false);
             this.panelLoggedData.ResumeLayout(false);
             this.panelLoggedData.PerformLayout();
-            this.MaintabControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MaintabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,7 +423,7 @@ namespace TravelerDetailsManagementSystem
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panelLoggedData;
         private System.Windows.Forms.Button btnAddDocument;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
